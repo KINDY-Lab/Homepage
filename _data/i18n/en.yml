@@ -29,7 +29,7 @@ about:
   desc: "KINDY Lab investigates the science of early childhood education — how classroom quality shapes children's cognitive, social-emotional, and behavioral development, and how targeted interventions can close opportunity gaps from the very start of life."
   quote: "Every child deserves a high-quality early education. Our role is to build the science — and the technology — that makes that possible at scale."
   cards:
-    director_title: "Lab Director Overview"
+    director_title: "Lab PI Overview"
     director_desc: "Learn about Dr. Huang's research vision, academic background, and current projects."
     director_link: "View Profile"
     join_title: "Join KINDY Lab"
@@ -107,7 +107,7 @@ team:
   ma_label: "Master's Students"
   collab_label: "Collaborators"
   recruiting: "We're Recruiting!"
-  recruiting_role: "PhD 2025 · Openings"
+  recruiting_role: "PhD 2026 · Openings"
   recruiting_tag: "Apply Now"
 
 news:
@@ -136,7 +136,7 @@ join:
   desc: "We are recruiting passionate, rigorous scholars at all levels who care deeply about children's futures. You'll join a high-impact, internationally connected lab in Shenzhen — one of China's most dynamic cities."
   positions:
     phd_title: "PhD Students"
-    phd_desc: "Multiple PhD positions available for 2025/2026 intake. We welcome applicants from psychology, education, statistics, and AI backgrounds with strong quantitative skills and genuine interest in early childhood education."
+    phd_desc: "Multiple PhD positions available for 2026/2027 intake. We welcome applicants from psychology, education, statistics, and AI backgrounds with strong quantitative skills and genuine interest in early childhood education."
     postdoc_title: "Postdoctoral Researchers"
     postdoc_desc: "We welcome applications from researchers with expertise in developmental psychology, ECE quality, quantitative methods, or AI in education. Competitive salary with strong publication support."
     ra_title: "Research Assistants & Interns"
@@ -169,4 +169,4 @@ footer:
   connect: "Connect"
   scholar: "Google Scholar"
   faculty: "Faculty Page"
-  copyright: "© 2025 KINDY Lab · CUHK Shenzhen"
+  copyright: "© 2026 KINDY Lab · CUHK Shenzhen"

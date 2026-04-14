@@ -603,6 +603,14 @@ section { padding: var(--section-pad); }
   font-size: 36px;
   margin-bottom: 20px;
   display: block;
+  width: 60px;
+  height: 60px;
+  background: rgba(212,168,67,0.08);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
 }
 .pillar-num {
   font-family: var(--font-display);
@@ -916,7 +924,7 @@ section { padding: var(--section-pad); }
 .award-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
 .award-card:nth-child(odd) { border-left: 3px solid var(--gold-500); }
 .award-card:nth-child(even) { border-left: 3px solid var(--purple-600); }
-.award-icon { font-size: 32px; margin-bottom: 16px; }
+.award-icon { font-size: 32px; margin-bottom: 16px; width: 52px; height: 52px; background: rgba(212,168,67,0.06); border-radius: 12px; display: flex; align-items: center; justify-content: center; padding: 10px; }
 .award-title {
   font-family: var(--font-display);
   font-size: 20px;
@@ -955,6 +963,159 @@ section { padding: var(--section-pad); }
   filter: grayscale(1);
 }
 .funder-logo:hover { opacity: 1; filter: grayscale(0); }
+
+/* ===== CHARITY PHOTO WALL ===== */
+.charity-wall {
+  margin-top: 48px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.charity-row {
+  overflow: hidden;
+  width: 100%;
+}
+.charity-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+}
+.charity-row-left .charity-track {
+  animation: charityScrollLeft 40s linear infinite;
+}
+.charity-row-right .charity-track {
+  animation: charityScrollRight 40s linear infinite;
+}
+.charity-track img {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.charity-track img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.15);
+}
+@keyframes charityScrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes charityScrollRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* Lightbox */
+.charity-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,0.92);
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+.charity-lightbox.active {
+  display: flex;
+}
+.charity-lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.charity-lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 36px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.charity-lightbox-close:hover { opacity: 1; }
+
+/* ===== NEWS CAROUSEL ===== */
+.news-carousel {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+.news-carousel-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+.news-carousel-track img {
+  min-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.news-carousel-prev,
+.news-carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  border: none;
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.news-carousel-prev:hover,
+.news-carousel-next:hover { background: rgba(0,0,0,0.7); }
+.news-carousel-prev { left: 12px; }
+.news-carousel-next { right: 12px; }
+.news-carousel-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 2;
+}
+.news-carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, width 0.2s;
+  padding: 0;
+}
+.news-carousel-dot.active {
+  background: white;
+  width: 20px;
+  border-radius: 4px;
+}
 
 /* ===== TEAM ===== */
 #team { background: var(--cream); }
@@ -1219,27 +1380,54 @@ section { padding: var(--section-pad); }
   font-family: var(--font-display);
   font-size: 20px;
   font-weight: 600;
-  color: rgba(0,0,0,0.25);
+  color: rgba(0,0,0,0.3);
   letter-spacing: -0.02em;
-  transition: color 0.2s;
-  cursor: default;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding: 0 32px;
 }
-.media-logo:hover { color: rgba(0,0,0,0.5); }
-.collab-logos {
+
+/* Collab logo marquee */
+.collab-marquee {
+  overflow: hidden;
+  margin-top: 20px;
+  mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
+}
+.collab-marquee-track {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-top: 20px;
+  gap: 60px;
+  width: max-content;
+  animation: marqueeScroll 25s linear infinite;
 }
 .collab-logo-img {
-  height: 40px;
-  opacity: 0.4;
+  height: 48px;
+  opacity: 0.5;
   filter: grayscale(1);
-  transition: opacity 0.2s, filter 0.2s;
+  flex-shrink: 0;
+  transition: opacity 0.2s;
 }
-.collab-logo-img:hover { opacity: 0.8; filter: grayscale(0); }
+.collab-logo-img:hover { opacity: 0.9; }
+
+/* Journal name marquee */
+.media-marquee {
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
+}
+.media-marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: max-content;
+  animation: marqueeScroll 35s linear infinite;
+}
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 .collab-logo {
   padding: 12px 24px;
   background: white;
@@ -1659,4 +1847,5 @@ footer {
   .team-pi-row { flex-direction: column; text-align: center; padding: 32px 24px; }
   .pi-links { justify-content: center; }
   .pi-badges { justify-content: center; }
+  .charity-track img { width: 240px; height: 170px; }
 }

@@ -196,6 +196,85 @@
     el.innerHTML = html;
   });
 
+  // ===== NEWS CAROUSEL =====
+  var carousel = document.querySelector('.news-carousel');
+  if (carousel) {
+    var track = carousel.querySelector('.news-carousel-track');
+    var imgs = carousel.querySelectorAll('.news-carousel-track img');
+    var prevBtn = carousel.querySelector('.news-carousel-prev');
+    var nextBtn = carousel.querySelector('.news-carousel-next');
+    var dotsContainer = carousel.querySelector('.news-carousel-dots');
+    var currentSlide = 0;
+    var slideCount = imgs.length;
+    var autoInterval;
+
+    // Create dots
+    for (var i = 0; i < slideCount; i++) {
+      var dot = document.createElement('button');
+      dot.className = 'news-carousel-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('data-index', i);
+      dot.setAttribute('aria-label', 'Slide ' + (i + 1));
+      dotsContainer.appendChild(dot);
+    }
+    var dots = dotsContainer.querySelectorAll('.news-carousel-dot');
+
+    function goToSlide(idx) {
+      currentSlide = ((idx % slideCount) + slideCount) % slideCount;
+      track.style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
+      dots.forEach(function(d, j) {
+        d.classList.toggle('active', j === currentSlide);
+      });
+    }
+
+    function startAuto() {
+      autoInterval = setInterval(function() {
+        goToSlide(currentSlide + 1);
+      }, 4000);
+    }
+    function stopAuto() { clearInterval(autoInterval); }
+
+    prevBtn.addEventListener('click', function() { stopAuto(); goToSlide(currentSlide - 1); startAuto(); });
+    nextBtn.addEventListener('click', function() { stopAuto(); goToSlide(currentSlide + 1); startAuto(); });
+    dotsContainer.addEventListener('click', function(e) {
+      if (e.target.classList.contains('news-carousel-dot')) {
+        stopAuto();
+        goToSlide(parseInt(e.target.getAttribute('data-index'), 10));
+        startAuto();
+      }
+    });
+    startAuto();
+  }
+
+  // ===== CHARITY PHOTO LIGHTBOX =====
+  var lightbox = document.getElementById('charity-lightbox');
+  var lightboxImg = lightbox ? lightbox.querySelector('img') : null;
+  var lightboxClose = lightbox ? lightbox.querySelector('.charity-lightbox-close') : null;
+
+  document.querySelectorAll('.charity-track img').forEach(function(img) {
+    img.addEventListener('click', function() {
+      if (lightbox && lightboxImg) {
+        lightboxImg.src = this.src;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
+  if (lightboxClose) {
+    lightboxClose.addEventListener('click', function() {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  }
+  if (lightbox) {
+    lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox) {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
   // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {

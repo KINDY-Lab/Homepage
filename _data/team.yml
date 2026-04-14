@@ -37,19 +37,19 @@ pi:
 
 phd_students:
   - name_en: "Junlin Wu"
-    name_zh: "吴峻林"
-    year: 2
+    name_zh: "吴俊霖"
+    year: 3
     research_en: "Early Childhood Assessment, Classroom Quality"
     research_zh: "幼儿教育评估，课堂质量"
     photo: "assets/images/team/phd-Junlin Wu.jpg"
   - name_en: "Yanan Bao"
-    name_zh: "包亚楠"
-    year: 1
+    name_zh: "包雅楠"
+    year: 2
     research_en: "Child Development, Self-Regulation"
     research_zh: "儿童发展，自我调节"
     photo: "assets/images/team/phd-Yanan bao.jpg"
   - name_en: "Yuye Jin"
-    name_zh: "金宇烨"
+    name_zh: "金煜烨"
     year: 1
     research_en: "AI in Education, NLP"
     research_zh: "教育人工智能，自然语言处理"
@@ -63,7 +63,7 @@ phd_students:
 
 ma_students:
   - name_en: "Baoyi Lu"
-    name_zh: "陆宝仪"
+    name_zh: "陆宝怡"
     research_en: "Early Childhood Education"
     research_zh: "幼儿教育"
     photo: "assets/images/team/ma-Baoyi Lu.jpg"

@@ -1,8 +1,8 @@
 - id: childmind-ai
   title_en: "ChildMind AI Education — China's First LLM-Based ECE Quality System"
   title_zh: "童心智教 — 中国首个基于大语言模型的幼儿教育质量评估系统"
-  venue_en: "AI System · Shenzhen · 2024–Ongoing"
-  venue_zh: "AI系统 · 深圳 · 2024–进行中"
+  venue_en: "AI X ECE · Shenzhen · 2024–Ongoing"
+  venue_zh: "AI x 教育 · 深圳 · 2024–进行中"
   desc_en: "Piloted across 40 classrooms in 3 kindergartens; now scaling to 65 kindergartens and 5,000+ children across all 9 districts of Shenzhen in partnership with the Shenzhen Education Supervision Center."
   desc_zh: "在3所幼儿园40个教室完成试点；现正与深圳市教育督导评估中心合作，扩展至全市9个行政区的65所幼儿园、5000+儿童。"
   tags: ["AI/LLM", "Flagship", "Policy Impact"]
