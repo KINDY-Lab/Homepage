@@ -4,8 +4,8 @@ email: runkehuang@cuhk.edu.cn
 description: >-
   KINDY Lab at CUHK Shenzhen studies early childhood education quality,
   child development, and AI-powered assessment. PI: Dr. Runke Huang (黄润珂).
-baseurl: ""
-url: ""
+baseurl: "/Homepage"
+url: "https://kindy-lab.github.io"
 
 plugins:
   - jekyll-seo-tag
