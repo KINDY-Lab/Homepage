@@ -269,6 +269,11 @@ nav.scrolled {
   margin-bottom: 32px;
   opacity: 0;
   animation: fadeUp 0.8s 0.2s forwards;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .hero-badge span { width: 6px; height: 6px; background: var(--gold-500); border-radius: 50%; }
 .hero-title {
@@ -550,6 +555,7 @@ section { padding: var(--section-pad); }
   display: flex; align-items: center; justify-content: center;
   margin-bottom: 20px;
   font-size: 20px;
+  line-height: 1;
 }
 .about-card-icon.purple { background: rgba(92,45,145,0.1); }
 .about-card-icon.gold { background: rgba(212,168,67,0.1); }
@@ -1607,7 +1613,11 @@ section { padding: var(--section-pad); }
   transition: background 0.2s;
 }
 .join-card:hover { background: rgba(255,255,255,0.16); }
-.join-card-icon { font-size: 32px; margin-bottom: 16px; }
+.join-card-icon {
+  font-size: 32px;
+  margin-bottom: 16px;
+  line-height: 1;
+}
 .join-card-title {
   font-weight: 600;
   font-size: 17px;
@@ -1846,6 +1856,7 @@ footer {
   .nav-links { display: none; }
   .nav-hamburger { display: flex; }
   .hero-content { padding: 0 24px; }
+  .hero-badge { font-size: 10px; letter-spacing: 0.06em; padding: 5px 12px; gap: 6px; }
   .hero-img-right { display: none; }
   .hero-overlay-fade { display: none; }
   .hero-stats { padding: 0 20px; flex-wrap: wrap; }
