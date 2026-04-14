@@ -958,11 +958,15 @@ section { padding: var(--section-pad); }
 }
 .funder-logo {
   height: 48px;
-  opacity: 0.5;
-  transition: opacity 0.2s;
-  filter: grayscale(1);
+  opacity: 0.85;
+  transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+  filter: none;
 }
-.funder-logo:hover { opacity: 1; filter: grayscale(0); }
+.funder-logo:hover {
+  opacity: 1;
+  transform: scale(1.08);
+  filter: brightness(1.1);
+}
 
 /* ===== CHARITY PHOTO WALL ===== */
 .charity-wall {
@@ -971,6 +975,11 @@ section { padding: var(--section-pad); }
   display: flex;
   flex-direction: column;
   gap: 16px;
+  max-width: var(--container);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 60px;
+  border-radius: 16px;
 }
 .charity-row {
   overflow: hidden;
@@ -1403,12 +1412,15 @@ section { padding: var(--section-pad); }
 }
 .collab-logo-img {
   height: 48px;
-  opacity: 0.5;
-  filter: grayscale(1);
+  opacity: 0.85;
+  filter: none;
   flex-shrink: 0;
-  transition: opacity 0.2s;
+  transition: opacity 0.3s, transform 0.3s;
 }
-.collab-logo-img:hover { opacity: 0.9; }
+.collab-logo-img:hover {
+  opacity: 1;
+  transform: scale(1.06);
+}
 
 /* Journal name marquee */
 .media-marquee {
@@ -1421,12 +1433,16 @@ section { padding: var(--section-pad); }
   align-items: center;
   gap: 0;
   width: max-content;
-  animation: marqueeScroll 35s linear infinite;
+  animation: marqueeScrollReverse 35s linear infinite;
 }
 
 @keyframes marqueeScroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
+}
+@keyframes marqueeScrollReverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
 }
 .collab-logo {
   padding: 12px 24px;
@@ -1819,6 +1835,7 @@ footer {
 @media (max-width: 1024px) {
   .container { padding: 0 32px; }
   nav { padding: 0 32px; }
+  .charity-wall { padding: 0 32px; }
   .pillars-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid { grid-template-columns: 1fr; gap: 48px; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
@@ -1833,6 +1850,7 @@ footer {
   .hero-overlay-fade { display: none; }
   .hero-stats { padding: 0 20px; flex-wrap: wrap; }
   .container { padding: 0 20px; }
+  .charity-wall { padding: 0 20px; }
   .projects-grid { grid-template-columns: 1fr; }
   .project-card.featured { grid-column: span 1; }
   .team-grid { grid-template-columns: repeat(2, 1fr); }
