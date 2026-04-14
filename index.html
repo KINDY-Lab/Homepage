@@ -499,7 +499,7 @@ title: KINDY Lab — CUHK Shenzhen
       <div class="director-note-desc" data-en="Oversees 170+ students across 4 cohorts | Pioneered 8-year integrated Bachelor's-Master's-PhD pathway" data-zh="管理4个年级170余名学生 | 首创八年制本硕博贯通培养方案">Oversees 170+ students across 4 cohorts | Pioneered 8-year integrated Bachelor's-Master's-PhD pathway</div>
     </div>
     <div class="courses-grid">
-      {% for course in site.data.courses %}
+      {% for course in site.data.courses.items %}
       {% if course.code %}
       <div class="course-card reveal">
         <div class="course-img" style="background: {{ course.icon_bg }};">
