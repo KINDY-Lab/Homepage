@@ -269,7 +269,7 @@ title: KINDY Lab — CUHK Shenzhen
       Recognized for Research <em>Excellence</em>
     </h2>
     <div class="awards-grid">
-      {% for award in site.data.awards %}
+      {% for award in site.data.awards.items %}
       {% if award.icon %}
       <div class="award-card reveal">
         <div class="award-icon">{{ award.icon }}</div>
