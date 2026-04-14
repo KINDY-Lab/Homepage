@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<section class="page-header" style="background: var(--purple-900); padding: 140px 0 60px;">
+  <div class="container">
+    <a href="{{ '/' | relative_url }}" style="color: var(--gold-500); font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 8px; margin-bottom: 20px;">
+      ← Back to Projects
+    </a>
+    <h1 class="section-title" style="color: white; font-size: clamp(36px, 4vw, 56px);">
+      {{ page.title }}
+    </h1>
+    {% if page.subtitle %}
+    <p style="font-size: 18px; color: rgba(255,255,255,0.5); margin-top: 12px; max-width: 700px;">{{ page.subtitle }}</p>
+    {% endif %}
+  </div>
+</section>
+
+{{ content }}
+
+<section style="padding: 40px 0 80px;">
+  <div class="container" style="text-align: center;">
+    <a href="{{ '/' | relative_url }}#projects" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; border: 1px solid var(--border); border-radius: 8px; color: var(--text-muted); font-size: 14px; font-weight: 600; text-decoration: none;">
+      ← Back to All Projects
+    </a>
+  </div>
+</section>

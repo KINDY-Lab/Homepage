@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}" />
+  <meta name="keywords" content="KINDY Lab, early childhood education, kindergarten quality, child development, ChildMind AI, CUHK Shenzhen, 黄润珂, 幼儿教育" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
+  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:image" content="{{ '/assets/images/og-image.jpg' | relative_url }}" />
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+
+  <!-- Fonts: self-hosted for China compatibility -->
+  <style>
+    @font-face {
+      font-family: 'Cormorant Garamond';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: local('Cormorant Garamond Regular'), local('CormorantGaramond-Regular');
+    }
+    @font-face {
+      font-family: 'Cormorant Garamond';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: local('Cormorant Garamond SemiBold'), local('CormorantGaramond-SemiBold');
+    }
+    @font-face {
+      font-family: 'Cormorant Garamond';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: local('Cormorant Garamond Bold'), local('CormorantGaramond-Bold');
+    }
+    @font-face {
+      font-family: 'Cormorant Garamond';
+      font-style: italic;
+      font-weight: 400;
+      font-display: swap;
+      src: local('Cormorant Garamond Italic'), local('CormorantGaramond-Italic');
+    }
+    @font-face {
+      font-family: 'Cormorant Garamond';
+      font-style: italic;
+      font-weight: 600;
+      font-display: swap;
+      src: local('Cormorant Garamond SemiBold Italic'), local('CormorantGaramond-SemiBoldItalic');
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  {% seo %}
+</head>
+<body>
+  {% include navbar.html %}
+
+  {{ content }}
+
+  {% include footer.html %}
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

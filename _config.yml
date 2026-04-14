@@ -1,0 +1,29 @@
+title: KINDY Lab
+tagline: "Early Childhood Education Science at CUHK Shenzhen"
+email: runkehuang@cuhk.edu.cn
+description: >-
+  KINDY Lab at CUHK Shenzhen studies early childhood education quality,
+  child development, and AI-powered assessment. PI: Dr. Runke Huang (黄润珂).
+baseurl: ""
+url: ""
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+
+sass:
+  style: compressed
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"

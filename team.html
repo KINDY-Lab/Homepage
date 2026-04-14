@@ -1,0 +1,123 @@
+---
+layout: page
+title: Our Team
+title_en: "Our Team"
+title_zh: "我们的团队"
+section_label: "People"
+---
+
+<!-- PI Section -->
+<div class="team-pi-row reveal" style="margin-top:0;margin-bottom:48px;">
+  <div class="pi-photo">
+    <img src="{{ site.data.team.pi.photo | relative_url }}" alt="{{ site.data.team.pi.name_en }}" />
+  </div>
+  <div class="pi-details">
+    <div class="pi-name" data-en="{{ site.data.team.pi.name_en }}" data-zh="{{ site.data.team.pi.name_zh }}">{{ site.data.team.pi.name_en }}</div>
+    <div class="pi-title-text" data-en="{{ site.data.team.pi.title_en }} · {{ site.data.team.pi.institution_en }}" data-zh="{{ site.data.team.pi.title_zh }} · {{ site.data.team.pi.institution_zh }}">
+      {{ site.data.team.pi.title_en }} · {{ site.data.team.pi.institution_en }}
+    </div>
+    <p style="font-size:14px;color:rgba(255,255,255,0.5);line-height:1.7;margin-top:12px;max-width:600px;" data-en="{{ site.data.team.pi.bio_en }}" data-zh="{{ site.data.team.pi.bio_zh }}">
+      {{ site.data.team.pi.bio_en }}
+    </p>
+    <div class="pi-badges">
+      {% for edu in site.data.team.pi.education %}
+      <span class="pi-badge">🎓 {{ edu.degree }} · {{ edu.institution }} ({{ edu.year }})</span>
+      {% endfor %}
+    </div>
+    <div class="pi-links">
+      <a href="{{ site.data.team.pi.links.scholar }}" target="_blank" class="pi-link primary">Google Scholar</a>
+      <a href="{{ site.data.team.pi.links.faculty }}" target="_blank" class="pi-link secondary">Faculty Page</a>
+      <a href="mailto:{{ site.data.team.pi.email }}" class="pi-link secondary">✉ Email</a>
+    </div>
+  </div>
+</div>
+
+<!-- PhD Students -->
+<div class="reveal">
+  <div class="team-section-label" data-en="PhD Students" data-zh="博士生">PhD Students</div>
+  <div class="team-grid">
+    {% for member in site.data.team.phd_students %}
+    <div class="team-card">
+      {% if member.photo %}
+      <div class="team-avatar">
+        <img src="{{ member.photo | relative_url }}" alt="{{ member.name_en }}" loading="lazy" />
+      </div>
+      {% else %}
+      <div class="team-avatar-placeholder avatar-{{ 'a,b,c,d' | split: ',' }}[{{ forloop.index0 }}]">
+        {{ member.name_en | slice: 0 }}
+      </div>
+      {% endif %}
+      <div class="team-name" data-en="{{ member.name_en }}" data-zh="{{ member.name_zh }}">{{ member.name_en }}</div>
+      <div class="team-role">PhD Year {{ member.year }}</div>
+      <div class="team-tags">
+        <span class="team-tag" data-en="{{ member.research_en }}" data-zh="{{ member.research_zh }}">{{ member.research_en }}</span>
+      </div>
+    </div>
+    {% endfor %}
+    <div class="team-card" style="border: 2px dashed var(--gold-500);cursor:pointer;" onclick="window.location='{{ '/' | relative_url }}#join'">
+      <div class="team-avatar-placeholder avatar-recruit">+</div>
+      <div class="team-name" data-en="We're Recruiting!" data-zh="正在招募！">We're Recruiting!</div>
+      <div class="team-role">PhD 2025 · Openings</div>
+      <div class="team-tags">
+        <span class="team-tag" style="color:var(--gold-500);font-weight:600;">Apply Now →</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Master's Students -->
+{% if site.data.team.ma_students.size > 0 %}
+<div class="reveal">
+  <div class="team-section-label" data-en="Master's Students" data-zh="硕士生">Master's Students</div>
+  <div class="team-grid">
+    {% for member in site.data.team.ma_students %}
+    <div class="team-card">
+      {% if member.photo %}
+      <div class="team-avatar">
+        <img src="{{ member.photo | relative_url }}" alt="{{ member.name_en }}" loading="lazy" />
+      </div>
+      {% else %}
+      <div class="team-avatar-placeholder avatar-e">{{ member.name_en | slice: 0 }}</div>
+      {% endif %}
+      <div class="team-name" data-en="{{ member.name_en }}" data-zh="{{ member.name_zh }}">{{ member.name_en }}</div>
+      <div class="team-role">Master's Student</div>
+      <div class="team-tags">
+        <span class="team-tag" data-en="{{ member.research_en }}" data-zh="{{ member.research_zh }}">{{ member.research_en }}</span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<!-- Collaborators -->
+<div class="reveal">
+  <div class="team-section-label" data-en="Collaborators" data-zh="合作者">Collaborators</div>
+  <div class="team-grid" style="grid-template-columns: repeat(2, 1fr);">
+    {% for member in site.data.team.collaborators %}
+    <div class="team-card" style="text-align:left;display:flex;gap:16px;align-items:center;">
+      {% if member.photo %}
+      <div class="team-avatar" style="margin:0;flex-shrink:0;">
+        <img src="{{ member.photo | relative_url }}" alt="{{ member.name_en }}" loading="lazy" />
+      </div>
+      {% endif %}
+      <div>
+        <div class="team-name" data-en="{{ member.name_en }}" data-zh="{{ member.name_zh }}">{{ member.name_en }}</div>
+        <div class="team-role" data-en="{{ member.institution_en }}" data-zh="{{ member.institution_zh }}">{{ member.institution_en }}</div>
+        <div class="team-tags">
+          <span class="team-tag" data-en="{{ member.role_en }}" data-zh="{{ member.role_zh }}">{{ member.role_en }}</span>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- Join CTA -->
+<div class="reveal" style="text-align:center;margin-top:60px;padding:48px;background:var(--purple-100);border-radius:20px;">
+  <h3 style="font-family:var(--font-display);font-size:28px;font-weight:600;margin-bottom:12px;color:var(--text);" data-en="Join Our Team" data-zh="加入我们的团队">Join Our Team</h3>
+  <p style="font-size:15px;color:var(--text-muted);margin-bottom:24px;max-width:500px;margin-left:auto;margin-right:auto;" data-en="We are always looking for talented researchers who are passionate about early childhood education." data-zh="我们始终在寻找对幼儿教育充满热情的优秀研究者。">
+    We are always looking for talented researchers who are passionate about early childhood education.
+  </p>
+  <a href="mailto:runkehuang@cuhk.edu.cn" class="btn-primary" data-en="Get in Touch →" data-zh="联系我们 →">Get in Touch →</a>
+</div>

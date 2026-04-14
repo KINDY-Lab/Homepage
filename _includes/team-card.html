@@ -1,0 +1,20 @@
+<div class="team-card">
+  {% if member.photo %}
+  <div class="team-avatar">
+    <img src="{{ member.photo | relative_url }}" alt="{{ member.name_en }}" loading="lazy" />
+  </div>
+  {% else %}
+  <div class="team-avatar-placeholder avatar-{{ avatar_class }}">
+    {{ member.name_en | slice: 0 }}
+  </div>
+  {% endif %}
+  <div class="team-name" data-en="{{ member.name_en }}" data-zh="{{ member.name_zh }}">{{ member.name_en }}</div>
+  <div class="team-role">
+    {% if member.year %}PhD Year {{ member.year }}{% endif %}
+  </div>
+  <div class="team-tags">
+    {% if member.research_en %}
+    <span class="team-tag" data-en="{{ member.research_en | split: ',' | first }}" data-zh="{{ member.research_zh | split: ',' | first }}">{{ member.research_en | split: ',' | first }}</span>
+    {% endif %}
+  </div>
+</div>

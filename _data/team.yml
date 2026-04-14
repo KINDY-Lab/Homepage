@@ -1,0 +1,85 @@
+pi:
+  name_en: "Runke Huang"
+  name_zh: "黄润珂"
+  title_en: "Assistant Professor"
+  title_zh: "助理教授"
+  institution_en: "School of Humanities and Social Science, CUHK Shenzhen"
+  institution_zh: "香港中文大学（深圳）人文社科学院"
+  photo: "assets/images/team/pi-runke-huang.png"
+  email: "runkehuang@cuhk.edu.cn"
+  bio_en: "Dr. Runke Huang is an Assistant Professor at the School of Humanities and Social Science, The Chinese University of Hong Kong, Shenzhen. Her research focuses on early childhood education quality, child development, and evidence-based interventions, with particular expertise in randomized controlled trials and AI-powered assessment systems. She is the creator of ChildMind AI Education (童心智教), China's first LLM-based instructional quality assessment system for early childhood education."
+  bio_zh: "黄润珂博士是香港中文大学（深圳）人文社科学院助理教授。她的研究方向包括幼儿教育质量评估、儿童发展及循证教育干预，特别擅长随机对照试验和AI驱动的评估系统。她是「童心智教」系统的创建者——中国首个基于大语言模型的幼儿教育教学质量评估系统。"
+  education:
+    - degree: "PhD"
+      field_en: "Child Development and Learning"
+      field_zh: "儿童发展与学习"
+      institution: "University of Oxford"
+      year: 2023
+      supervisor: "Prof. Iram Siraj & Prof. Edward Melhuish"
+    - degree: "MEd"
+      field_en: "Education"
+      field_zh: "教育学"
+      institution: "The University of Hong Kong"
+      year: 2018
+      note_en: "with Distinction"
+      note_zh: "优异"
+    - degree: "BEd"
+      field_en: "Early Childhood Education"
+      field_zh: "学前教育"
+      institution: "Beijing Normal University"
+      year: 2017
+  note_en: "Former Kindergarten Teacher"
+  note_zh: "曾任幼儿园教师"
+  links:
+    scholar: "https://scholar.google.com/citations?user=Bj3DkxQAAAAJ"
+    faculty: "https://myweb.cuhk.edu.cn/runkehuang"
+    email: "runkehuang@cuhk.edu.cn"
+
+phd_students:
+  - name_en: "Junlin Wu"
+    name_zh: "吴峻林"
+    year: 2
+    research_en: "Early Childhood Assessment, Classroom Quality"
+    research_zh: "幼儿教育评估，课堂质量"
+    photo: "assets/images/team/phd-Junlin Wu.jpg"
+  - name_en: "Yanan Bao"
+    name_zh: "包亚楠"
+    year: 1
+    research_en: "Child Development, Self-Regulation"
+    research_zh: "儿童发展，自我调节"
+    photo: "assets/images/team/phd-Yanan bao.jpg"
+  - name_en: "Yuye Jin"
+    name_zh: "金宇烨"
+    year: 1
+    research_en: "AI in Education, NLP"
+    research_zh: "教育人工智能，自然语言处理"
+    photo: "assets/images/team/phd-Yuye Jin.jpg"
+  - name_en: "Jingwen Li"
+    name_zh: "李静雯"
+    year: 1
+    research_en: "Play-Based Learning, Deeper Learning"
+    research_zh: "游戏化学习，深度学习"
+    photo: "assets/images/team/phd-JingwenLi.jpg"
+
+ma_students:
+  - name_en: "Baoyi Lu"
+    name_zh: "陆宝仪"
+    research_en: "Early Childhood Education"
+    research_zh: "幼儿教育"
+    photo: "assets/images/team/ma-Baoyi Lu.jpg"
+
+collaborators:
+  - name_en: "Prof. Iram Siraj"
+    name_zh: "Iram Siraj 教授"
+    institution_en: "University of Oxford"
+    institution_zh: "牛津大学"
+    role_en: "PhD Supervisor & Research Collaborator"
+    role_zh: "博士导师与研究合作者"
+    photo: "assets/images/team/collab-iram-siraj.webp"
+  - name_en: "Prof. Edward Melhuish"
+    name_zh: "Edward Melhuish 教授"
+    institution_en: "University of Oxford"
+    institution_zh: "牛津大学"
+    role_en: "PhD Supervisor & Research Collaborator"
+    role_zh: "博士导师与研究合作者"
+    photo: "assets/images/team/collab-edward-melhuish.jpg"

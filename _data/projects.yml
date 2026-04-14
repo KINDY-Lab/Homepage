@@ -1,0 +1,55 @@
+- id: childmind-ai
+  title_en: "ChildMind AI Education — China's First LLM-Based ECE Quality System"
+  title_zh: "童心智教 — 中国首个基于大语言模型的幼儿教育质量评估系统"
+  venue_en: "AI System · Shenzhen · 2024–Ongoing"
+  venue_zh: "AI系统 · 深圳 · 2024–进行中"
+  desc_en: "Piloted across 40 classrooms in 3 kindergartens; now scaling to 65 kindergartens and 5,000+ children across all 9 districts of Shenzhen in partnership with the Shenzhen Education Supervision Center."
+  desc_zh: "在3所幼儿园40个教室完成试点；现正与深圳市教育督导评估中心合作，扩展至全市9个行政区的65所幼儿园、5000+儿童。"
+  tags: ["AI/LLM", "Flagship", "Policy Impact"]
+  image: "assets/images/childmind-ai/Teaser.webp"
+  featured: true
+  category: ai
+
+- id: rct-shenzhen
+  title_en: "Professional Development RCT: Improving Kindergarten Teaching Quality"
+  title_zh: "专业发展RCT：提升幼儿园教学质量"
+  venue_en: "RCT · Shenzhen · 2023–2024"
+  venue_zh: "随机对照试验 · 深圳 · 2023–2024"
+  desc_en: "A cluster randomized controlled trial evaluating the 'Leadership for Learning' program across kindergartens in Shenzhen, targeting teaching quality improvement and child development outcomes."
+  desc_zh: "一项集群随机对照试验，在深圳幼儿园评估「以学习为导向的领导力」项目，旨在提升教学质量和儿童发展效果。"
+  tags: ["RCT", "Prof. Development"]
+  image: "assets/images/events/training-sz-group-photo.jpg"
+  category: rct
+
+- id: longitudinal-quality
+  title_en: "Process Quality in Shenzhen Kindergartens"
+  title_zh: "深圳幼儿园过程质量研究"
+  venue_en: "Longitudinal Study · Shenzhen"
+  venue_zh: "纵向研究 · 深圳"
+  desc_en: "A longitudinal study tracking kindergarten process quality and its impact on children's developmental trajectories across Shenzhen's diverse ECE settings."
+  desc_zh: "追踪深圳多元化幼教环境中幼儿园过程质量及其对儿童发展轨迹影响的纵向研究。"
+  tags: ["Longitudinal", "Quality"]
+  image: "assets/images/charity/charity-gz-kindergarten.jpg"
+  category: quality
+
+- id: childdev-profiles
+  title_en: "Child Development Profiles (Latent Profile Analysis)"
+  title_zh: "儿童发展特征分析（潜在剖面分析）"
+  venue_en: "Child Development · Multi-site"
+  venue_zh: "儿童发展 · 多点研究"
+  desc_en: "Multilevel latent profile analysis linking classroom quality to children's academic and social-emotional development profiles."
+  desc_zh: "运用多层面潜在剖面分析方法，探究课堂质量与儿童学业及社会情感发展特征之间的联系。"
+  tags: ["Child Dev", "Latent Profile"]
+  image: "assets/images/lab/sz-kid-interact.jpg"
+  category: childdev
+
+- id: guizhou-equity
+  title_en: "Educational Equity — Guizhou Rural Kindergartens"
+  title_zh: "教育公平 — 贵州农村幼儿园"
+  venue_en: "Fieldwork · Guizhou · CDRF"
+  venue_zh: "田野工作 · 贵州 · 国发委"
+  desc_en: "Fieldwork and teacher professional development in Zhijin County, Guizhou; supported by China Development Research Foundation (CDRF)."
+  desc_zh: "在贵州省织金县开展田野调查和教师专业发展培训，由中国发展研究基金会支持。"
+  tags: ["CDRF", "Equity", "Rural ECE"]
+  image: "assets/images/charity/charity-gz-zhijin-group.jpg"
+  category: equity

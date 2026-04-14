@@ -1,0 +1,172 @@
+nav:
+  about: "About"
+  research: "Research"
+  projects: "Projects"
+  publications: "Publications"
+  team: "Team"
+  news: "News"
+  teaching: "Teaching"
+  join: "Join Us"
+  lang_toggle: "中文"
+
+hero:
+  badge: "KINDY Lab · CUHK Shenzhen"
+  title: "Unlocking Every Child's Full Potential Through Science"
+  subtitle: "We study early childhood education quality, child development, and AI-powered assessment — building evidence for kindergartens that truly work."
+  cta_primary: "Explore Our Research"
+  cta_secondary: "Join the Lab"
+  scroll: "Scroll to Explore"
+
+stats:
+  pubs: "Publications in Top Journals"
+  funding: "Competitive Research Funding"
+  kindergartens: "Kindergartens Studied"
+  children: "Countries · Collaborators"
+
+about:
+  label: "About KINDY Lab"
+  title: "Where Developmental Science Meets Real-World Impact"
+  desc: "KINDY Lab investigates the science of early childhood education — how classroom quality shapes children's cognitive, social-emotional, and behavioral development, and how targeted interventions can close opportunity gaps from the very start of life."
+  quote: "Every child deserves a high-quality early education. Our role is to build the science — and the technology — that makes that possible at scale."
+  cards:
+    director_title: "Lab Director Overview"
+    director_desc: "Learn about Dr. Huang's research vision, academic background, and current projects."
+    director_link: "View Profile"
+    join_title: "Join KINDY Lab"
+    join_desc: "We welcome PhD students, RAs, and visiting scholars with a passion for early childhood science."
+    join_link: "Open Positions"
+    contact_title: "Get in Touch"
+    contact_desc: "Interested in collaborating with us? Reach out to discuss research partnerships and opportunities."
+    contact_link: "Contact Us"
+
+research:
+  label: "Research Areas"
+  title: "Four Pillars of Early Childhood Science"
+  desc: "Our work spans the full arc of early childhood education — from understanding what quality looks like to designing interventions that improve it, and increasingly, how AI can accelerate all of it."
+  pillars:
+    - num: "01"
+      title: "Kindergarten Quality Evaluation"
+      desc: "Measuring and improving process quality in early childhood settings using validated observational tools and multi-level analysis."
+      tags: ["CLASS", "ECERS", "Observation", "HLM"]
+    - num: "02"
+      title: "Child Development & Assessment"
+      desc: "Studying cognitive, social-emotional, and behavioral development in preschoolers using longitudinal and latent profile methods."
+      tags: ["Self-Regulation", "Longitudinal", "Latent Profile", "Social-Emotional"]
+    - num: "03"
+      title: "Evidence-Based Interventions (RCT)"
+      desc: "Designing and rigorously evaluating professional development programs through randomized controlled trials in kindergartens."
+      tags: ["RCT", "Professional Development", "Teacher Quality", "Policy"]
+    - num: "04"
+      title: "AI in Early Education"
+      desc: "Developing China's first LLM-based instructional quality assessment system — making scalable, expert-level evaluation accessible to all."
+      tags: ["LLM", "EdTech", "NLP", "ChildMind AI"]
+      flagship: true
+
+projects:
+  label: "Featured Projects"
+  title: "Our Work in the Field"
+  view_all: "View All Projects"
+
+publications:
+  label: "Selected Publications"
+  title: "Rigorous Science, High-Impact Journals"
+  tabs:
+    all: "All"
+    recent: "2024–2025"
+    rct: "RCT Studies"
+    childdev: "Child Development"
+  scholar_link: "View Full Publication List on Google Scholar"
+  actions:
+    pdf: "PDF"
+    doi: "DOI"
+    bib: "BIB"
+
+impact:
+  pubs_num: "15+"
+  pubs_label: "Peer-Reviewed Publications"
+  pubs_desc: "Q1/Q2 Journals in Education & Psychology"
+  funding_num: "¥130万+"
+  funding_label: "Competitive Research Funding"
+  funding_desc: "NSFC · CDRF · Shenzhen"
+  kgs_num: "100+"
+  kgs_label: "Kindergartens Served"
+  kgs_desc: "Shenzhen · Guizhou · Zhejiang"
+  children_num: "4,000+"
+  children_label: "Children Impacted"
+  children_desc: "Directly through our programs"
+
+awards:
+  label: "Awards & Recognition"
+  title: "Recognized for Research Excellence"
+  funder_label: "Supported By"
+
+team:
+  label: "Our Team"
+  title: "The People Behind KINDY Lab"
+  phd_label: "PhD Students"
+  ma_label: "Master's Students"
+  collab_label: "Collaborators"
+  recruiting: "We're Recruiting!"
+  recruiting_role: "PhD 2025 · Openings"
+  recruiting_tag: "Apply Now"
+
+news:
+  label: "News & Updates"
+  title: "What's Happening in KINDY Lab"
+  view_all: "View All News"
+
+media:
+  collab_label: "Research Collaborators & Institutional Partners"
+  published_label: "Published In"
+
+teaching:
+  label: "Teaching"
+  title: "Training the Next Generation of Education Researchers"
+  quote: "I aim to cultivate researchers who are both rigorous scientists and compassionate educators — who understand that good research has the power to change children's lives, from Shenzhen to Guizhou and beyond."
+  quote_attr: "— Dr. Runke Huang"
+  metrics:
+    phd: "4 PhD Students"
+    ma: "1 Master's Student"
+    ug: "10+ Undergraduates"
+    pub: "3 PhD students with SSCI Q1 publications"
+
+join:
+  label: "Join KINDY Lab"
+  title: "Come Build the Science of Better Childhoods"
+  desc: "We are recruiting passionate, rigorous scholars at all levels who care deeply about children's futures. You'll join a high-impact, internationally connected lab in Shenzhen — one of China's most dynamic cities."
+  positions:
+    phd_title: "PhD Students"
+    phd_desc: "Multiple PhD positions available for 2025/2026 intake. We welcome applicants from psychology, education, statistics, and AI backgrounds with strong quantitative skills and genuine interest in early childhood education."
+    postdoc_title: "Postdoctoral Researchers"
+    postdoc_desc: "We welcome applications from researchers with expertise in developmental psychology, ECE quality, quantitative methods, or AI in education. Competitive salary with strong publication support."
+    ra_title: "Research Assistants & Interns"
+    ra_desc: "Undergraduate and Master's students can join as RAs or interns — gain hands-on experience in fieldwork, data analysis, and academic writing."
+  cta_primary: "Apply Now"
+  cta_secondary: "Learn More"
+
+contact:
+  label: "Contact"
+  title: "Let's Talk"
+  desc: "Whether you're interested in collaborating, applying to join the lab, or just learning more about our work — we'd love to hear from you."
+  form_title: "Send a Message"
+  form_first: "First Name"
+  form_last: "Last Name"
+  form_email: "Email Address"
+  form_role: "I am a..."
+  form_message: "Message"
+  form_submit: "Send Message"
+  roles:
+    - "Prospective PhD Student"
+    - "Prospective Postdoc"
+    - "Research Collaborator"
+    - "Journalist / Media"
+    - "Other"
+
+footer:
+  desc: "KINDY Lab studies early childhood education quality and child development at CUHK Shenzhen — building the science of better kindergartens across China."
+  research: "Research"
+  lab: "Lab"
+  connect: "Connect"
+  scholar: "Google Scholar"
+  faculty: "Faculty Page"
+  copyright: "© 2025 KINDY Lab · CUHK Shenzhen"

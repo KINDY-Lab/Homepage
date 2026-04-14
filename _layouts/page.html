@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<section class="page-header" style="background: var(--purple-900); padding: 140px 0 60px;">
+  <div class="container">
+    <div class="section-label" style="color: var(--gold-500);">
+      <span style="display:block;width:28px;height:2px;background:var(--gold-500);"></span>
+      {{ page.section_label | default: "" }}
+    </div>
+    <h1 class="section-title" style="color: white;" data-en="{{ page.title_en }}" data-zh="{{ page.title_zh }}">
+      {{ page.title }}
+    </h1>
+  </div>
+</section>
+
+<section style="padding: 60px 0;">
+  <div class="container">
+    {{ content }}
+  </div>
+</section>

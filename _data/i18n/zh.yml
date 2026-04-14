@@ -1,0 +1,172 @@
+nav:
+  about: "关于"
+  research: "研究"
+  projects: "项目"
+  publications: "论文"
+  team: "团队"
+  news: "新闻"
+  teaching: "教学"
+  join: "加入我们"
+  lang_toggle: "EN"
+
+hero:
+  badge: "KINDY Lab · 港中大深圳"
+  title: "以科学之力，释放每个孩子的无限潜能"
+  subtitle: "我们研究幼儿教育质量、儿童发展与AI驱动的教育评估——为真正有效的幼儿园建设循证基础。"
+  cta_primary: "探索我们的研究"
+  cta_secondary: "加入实验室"
+  scroll: "向下探索"
+
+stats:
+  pubs: "顶级期刊发表论文"
+  funding: "竞争性科研经费"
+  kindergartens: "研究覆盖幼儿园"
+  children: "国家 · 合作伙伴"
+
+about:
+  label: "关于 KINDY Lab"
+  title: "当发展科学遇见现实影响"
+  desc: "KINDY Lab致力于幼儿教育的科学研究——探究课堂质量如何影响儿童的认知、社会情感和行为发展，以及有针对性的干预措施如何从一开始就缩小机会差距。"
+  quote: "每个孩子都应该享有高质量的早期教育。我们的使命，是构建让这一目标规模化实现的科学基础与技术工具。"
+  cards:
+    director_title: "实验室主任简介"
+    director_desc: "了解黄润珂博士的研究愿景、学术背景和当前项目。"
+    director_link: "查看简介"
+    join_title: "加入 KINDY Lab"
+    join_desc: "我们欢迎对幼儿教育科学充满热情的博士生、研究助理和访问学者。"
+    join_link: "开放职位"
+    contact_title: "联系我们"
+    contact_desc: "有兴趣与我们合作吗？欢迎讨论研究合作与机会。"
+    contact_link: "联系方式"
+
+research:
+  label: "研究方向"
+  title: "幼儿教育科学的四大支柱"
+  desc: "我们的工作覆盖幼儿教育的全链条——从理解什么是质量，到设计改善质量的干预措施，以及如何利用AI加速这一进程。"
+  pillars:
+    - num: "01"
+      title: "幼儿园质量评估"
+      desc: "运用经验证的观察工具与多层次分析方法，测量并改善早期教育环境中的过程质量。"
+      tags: ["CLASS", "ECERS", "观察评估", "HLM"]
+    - num: "02"
+      title: "儿童发展与评估"
+      desc: "运用纵向研究与潜在剖面方法，探究学前儿童的认知、社会情感和行为发展。"
+      tags: ["自我调节", "纵向研究", "潜在剖面", "社会情感"]
+    - num: "03"
+      title: "循证教育干预（RCT）"
+      desc: "通过在幼儿园开展随机对照试验，设计并严格评估教师专业发展项目。"
+      tags: ["RCT", "专业发展", "教师质量", "政策"]
+    - num: "04"
+      title: "AI与早期教育"
+      desc: "研发中国首个基于大语言模型的早期教育教学质量评估系统——让专家级评估触达更多幼儿园。"
+      tags: ["LLM", "教育科技", "NLP", "童心智教"]
+      flagship: true
+
+projects:
+  label: "重点项目"
+  title: "我们的实践与探索"
+  view_all: "查看所有项目"
+
+publications:
+  label: "代表性论文"
+  title: "严谨科学，高影响力期刊"
+  tabs:
+    all: "全部"
+    recent: "2024–2025"
+    rct: "RCT研究"
+    childdev: "儿童发展"
+  scholar_link: "在 Google Scholar 查看完整论文列表"
+  actions:
+    pdf: "PDF"
+    doi: "DOI"
+    bib: "BIB"
+
+impact:
+  pubs_num: "15+"
+  pubs_label: "同行评审论文"
+  pubs_desc: "教育与心理学 Q1/Q2 期刊"
+  funding_num: "¥130万+"
+  funding_label: "竞争性科研经费"
+  funding_desc: "国自然 · 国发委 · 深圳市"
+  kgs_num: "100+"
+  kgs_label: "服务幼儿园"
+  kgs_desc: "深圳 · 贵州 · 浙江"
+  children_num: "4,000+"
+  children_label: "惠及儿童"
+  children_desc: "通过我们的项目直接受益"
+
+awards:
+  label: "荣誉与认可"
+  title: "科研成果获广泛认可"
+  funder_label: "资助方"
+
+team:
+  label: "我们的团队"
+  title: "KINDY Lab 的核心成员"
+  phd_label: "博士生"
+  ma_label: "硕士生"
+  collab_label: "合作者"
+  recruiting: "正在招募！"
+  recruiting_role: "2025级博士 · 开放申请"
+  recruiting_tag: "立即申请"
+
+news:
+  label: "新闻动态"
+  title: "KINDY Lab 最新动态"
+  view_all: "查看所有新闻"
+
+media:
+  collab_label: "研究合作与机构伙伴"
+  published_label: "发表期刊"
+
+teaching:
+  label: "教学"
+  title: "培养下一代教育研究者"
+  quote: "我希望培养出兼具严谨科学精神与深厚教育情怀的研究者——那些真正相信好的研究能够改变儿童命运的学者，从深圳到贵州，乃至更远。"
+  quote_attr: "—— 黄润珂博士"
+  metrics:
+    phd: "4名博士生"
+    ma: "1名硕士生"
+    ug: "10+名本科生"
+    pub: "3名博士生发表SSCI Q1论文"
+
+join:
+  label: "加入 KINDY Lab"
+  title: "加入我们，共同构建更好的儿童早期教育科学"
+  desc: "我们正在招募各个层级的优秀学者——那些真正关心儿童未来、追求严谨研究的人才。你将加入一个位于深圳的高影响力、国际化的研究团队。"
+  positions:
+    phd_title: "博士生"
+    phd_desc: "2025/2026届博士生招募中，欢迎心理学、教育学、统计学、AI相关背景的同学申请，要求具备较强定量研究能力及对幼儿教育的真诚热情。"
+    postdoc_title: "博士后研究员"
+    postdoc_desc: "欢迎在发展心理学、幼教质量评估、定量方法或教育AI领域有专长的研究者申请。提供有竞争力的薪资与发表支持。"
+    ra_title: "研究助理与实习生"
+    ra_desc: "本科生和硕士生可加入实验室担任研究助理——获得田野调查、数据分析和学术写作的实践经验。"
+  cta_primary: "立即申请"
+  cta_secondary: "了解更多"
+
+contact:
+  label: "联系方式"
+  title: "期待与您交流"
+  desc: "无论您是想合作研究、申请加入实验室，还是想了解更多关于我们的工作——我们期待您的来信。"
+  form_title: "发送消息"
+  form_first: "名"
+  form_last: "姓"
+  form_email: "电子邮箱"
+  form_role: "您的身份..."
+  form_message: "留言"
+  form_submit: "发送消息"
+  roles:
+    - "意向博士生"
+    - "意向博士后"
+    - "研究合作者"
+    - "媒体/记者"
+    - "其他"
+
+footer:
+  desc: "KINDY Lab在港中大（深圳）研究幼儿教育质量与儿童发展——构建更优质的中国幼儿园科学基础。"
+  research: "研究"
+  lab: "实验室"
+  connect: "联系"
+  scholar: "Google Scholar"
+  faculty: "教师主页"
+  copyright: "© 2025 KINDY Lab · 香港中文大学（深圳）"

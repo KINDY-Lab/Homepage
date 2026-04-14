@@ -1,0 +1,41 @@
+- id: young-researcher
+  icon: "🏆"
+  title_en: "2025 Young Researcher Award"
+  title_zh: "2025年青年科研奖"
+  desc_en: "School of Humanities and Social Science Young Researcher Award (2025). Sole recipient across the entire School — CUHK Shenzhen."
+  desc_zh: "2025年人文社科学院青年科研奖。全院唯一获奖者——香港中文大学（深圳）。"
+  badges: ["CUHK-SZ"]
+
+- id: nsfc-panel
+  icon: "🔬"
+  title_en: "NSFC Peer Review Panel"
+  title_zh: "国家自然科学基金通讯评审专家"
+  desc_en: "Invited peer reviewer for NSFC General Program (面上项目通讯评审) — a recognition unusual at this career stage."
+  desc_zh: "受邀担任国家自然科学基金面上项目通讯评审专家——在此职业阶段实属罕见。"
+  badges: ["NSFC"]
+
+- id: ceie-expo
+  icon: "🏛"
+  title_en: "14th China Electronic Information Expo"
+  title_zh: "第十四届中国电子信息博览会"
+  desc_en: "ChildMind AI Education selected for the 14th China Electronic Information Expo (中国电子信息博览会)."
+  desc_zh: "童心智教入选第十四届中国电子信息博览会展示。"
+  badges: ["CEIE 2024"]
+
+- id: policy-report
+  icon: "📋"
+  title_en: "Policy Report, Nanshan District Government"
+  title_zh: "南山区政府政策咨询报告"
+  desc_en: "Policy consultation report for Nanshan District Government on kindergarten quality monitoring systems."
+  desc_zh: "向南山区政府提交幼儿园质量监测体系政策咨询报告。"
+  badges: ["Policy Impact"]
+
+funders:
+  - name: "NSFC"
+    logo: "assets/images/logo/nsfc.webp"
+    name_en: "National Natural Science Foundation of China"
+    name_zh: "国家自然科学基金委"
+  - name: "CDRF"
+    logo: "assets/images/logo/cdrf-logo.webp"
+    name_en: "China Development Research Foundation"
+    name_zh: "中国发展研究基金会"

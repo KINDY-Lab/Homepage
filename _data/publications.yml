@@ -1,0 +1,127 @@
+- id: huang2024rct
+  year: 2024
+  title_en: "Promoting effective teaching and learning through a professional development program: A randomized controlled trial"
+  title_zh: "通过专业发展项目促进有效教学：一项随机对照试验"
+  authors: "Huang, R.*, Siraj, I., & Melhuish, E."
+  author_highlight: "Huang, R."
+  venue: "Journal of Educational Psychology"
+  venue_short: "J Educ Psychol"
+  year_pub: 2024
+  category: [rct, intervention]
+  badges: [Q1, RCT]
+  doi: ""
+  pdf: ""
+  featured: true
+
+- id: cheng2024play
+  year: 2024
+  title_en: "Preschool Children's Deeper-Learning in Mature Play"
+  title_zh: "幼儿在成熟游戏中的深度学习"
+  authors: "Cheng, Z. J., Ma, C. X., Huang, R., & Bai, Y."
+  author_highlight: "Huang, R."
+  venue: "Early Childhood Education Journal"
+  venue_short: "Early Child Educ J"
+  year_pub: 2024
+  category: [childdev, play]
+  badges: [Q1]
+  doi: ""
+  pdf: ""
+
+- id: fang2024bjep
+  year: 2024
+  title_en: "Teacher–child interaction quality and children's developmental outcomes in Chinese kindergartens"
+  title_zh: "中国幼儿园师幼互动质量与儿童发展结果"
+  authors: "Fang, M., Huang, R., & Zhang, C."
+  author_highlight: "Huang, R."
+  venue: "British Journal of Educational Psychology"
+  venue_short: "Br J Educ Psychol"
+  year_pub: 2024
+  category: [quality, childdev]
+  badges: [Q1]
+  doi: ""
+  pdf: ""
+
+- id: huang2023profiles
+  year: 2023
+  title_en: "Profiles of Chinese pre-schoolers' academic and social-emotional development in relation to classroom quality: A multilevel latent profile approach"
+  title_zh: "中国学前儿童学业与社会情感发展特征与课堂质量的关系：基于多层面潜在剖面分析"
+  authors: "Huang, R.* & Siraj, I."
+  author_highlight: "Huang, R."
+  venue: "Child Development"
+  venue_short: "Child Dev"
+  year_pub: 2023
+  category: [childdev, quality]
+  badges: [Q1, "IF 5.66"]
+  doi: ""
+  pdf: ""
+  featured: true
+
+- id: huang2023selfreg
+  year: 2023
+  title_en: "Exploring the Associations among Chinese Kindergartners between Academic Achievement and Behavioral, Cognitive and Emotional Self-Regulation"
+  title_zh: "中国幼儿学业成就与行为、认知和情绪自我调节之间的关系探讨"
+  authors: "Huang, R.*, Geng, Z., & Siraj, I."
+  author_highlight: "Huang, R."
+  venue: "Early Education and Development"
+  venue_short: "Early Educ Dev"
+  year_pub: 2023
+  category: [childdev, selfregulation]
+  badges: [Q2, "IF 2.1"]
+  doi: ""
+  pdf: ""
+
+- id: siraj2020bronfenbrenner
+  year: 2020
+  title_en: "Operationalizing Bronfenbrenner's PPCT Model in Researching Human Development: Commentary on Xia, Li and Tudge"
+  title_zh: "在人类发展研究中操作化布朗芬布伦纳的PPCT模型"
+  authors: "Siraj, I.* & Huang, R."
+  author_highlight: "Huang, R."
+  venue: "Human Development"
+  venue_short: "Hum Dev"
+  year_pub: 2020
+  category: [theory, review]
+  badges: [Q1, "IF 5.71"]
+  doi: ""
+  pdf: ""
+
+- id: yang2021training
+  year: 2021
+  title_en: "Training teacher-researchers through online collective academic supervision: Evidence from a postgraduate teacher education programme"
+  title_zh: "通过在线集体学术督导培养教师研究者：来自研究生教师教育项目的证据"
+  authors: "Yang, W., Huang, R.*, Li, Y., & Li, H."
+  author_highlight: "Huang, R."
+  venue: "Journal of Computer Assisted Learning"
+  venue_short: "J Comput Assist Learn"
+  year_pub: 2021
+  category: [teacher, technology]
+  badges: [Q1, "IF 3.76"]
+  doi: ""
+  pdf: ""
+
+- id: huang2019pedagogy
+  year: 2019
+  title_en: "On the road to participatory pedagogy: A mixed-methods study of pedagogical interaction in Chinese kindergartens"
+  title_zh: "走向参与式教学法：中国幼儿园教学互动的混合方法研究"
+  authors: "Huang, R., Yang, W.*, & Li, H."
+  author_highlight: "Huang, R."
+  venue: "Teaching and Teacher Education"
+  venue_short: "Teach Teach Educ"
+  year_pub: 2019
+  category: [quality, teacher]
+  badges: [Q1, "IF 3.78"]
+  doi: ""
+  pdf: ""
+
+- id: li2016preschool
+  year: 2016
+  title_en: "The development and future challenges of preschool education in China"
+  title_zh: "中国学前教育的发展与未来挑战"
+  authors: "Li, H.*, Yang, W., Chen, J., & Huang, R."
+  author_highlight: "Huang, R."
+  venue: "Early Childhood Education (Educational Sciences)"
+  venue_short: "Early Child Educ"
+  year_pub: 2016
+  category: [policy, review]
+  badges: []
+  doi: ""
+  pdf: ""

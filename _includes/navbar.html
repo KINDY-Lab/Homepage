@@ -1,0 +1,37 @@
+<nav id="navbar">
+  <a href="{{ '/' | relative_url }}" class="nav-logo">
+    <div class="nav-logo-mark">
+      <img src="{{ '/assets/images/logo/Kindy_lab.webp' | relative_url }}" alt="K" style="border-radius:6px;" />
+    </div>
+    <div>
+      <div class="nav-logo-text">KINDY Lab</div>
+      <div class="nav-logo-sub">CUHK Shenzhen</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="{{ '/#about' | relative_url }}" data-en="About" data-zh="关于">About</a></li>
+    <li><a href="{{ '/#research' | relative_url }}" data-en="Research" data-zh="研究">Research</a></li>
+    <li><a href="{{ '/#projects' | relative_url }}" data-en="Projects" data-zh="项目">Projects</a></li>
+    <li><a href="{{ '/#publications' | relative_url }}" data-en="Publications" data-zh="论文">Publications</a></li>
+    <li><a href="{{ '/#team' | relative_url }}" data-en="Team" data-zh="团队">Team</a></li>
+    <li><a href="{{ '/#news' | relative_url }}" data-en="News" data-zh="新闻">News</a></li>
+    <li><a href="{{ '/#teaching' | relative_url }}" data-en="Teaching" data-zh="教学">Teaching</a></li>
+    <li><a href="{{ '/#join' | relative_url }}" class="nav-cta" data-en="Join Us →" data-zh="加入我们 →">Join Us →</a></li>
+    <li><button class="nav-lang" id="lang-toggle" data-en="中文" data-zh="EN">中文</button></li>
+  </ul>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-overlay" id="mobile-overlay">
+  <a href="{{ '/#about' | relative_url }}" data-en="About" data-zh="关于">About</a>
+  <a href="{{ '/#research' | relative_url }}" data-en="Research" data-zh="研究">Research</a>
+  <a href="{{ '/#projects' | relative_url }}" data-en="Projects" data-zh="项目">Projects</a>
+  <a href="{{ '/#publications' | relative_url }}" data-en="Publications" data-zh="论文">Publications</a>
+  <a href="{{ '/#team' | relative_url }}" data-en="Team" data-zh="团队">Team</a>
+  <a href="{{ '/#news' | relative_url }}" data-en="News" data-zh="新闻">News</a>
+  <a href="{{ '/#teaching' | relative_url }}" data-en="Teaching" data-zh="教学">Teaching</a>
+  <a href="{{ '/#join' | relative_url }}" class="nav-cta" style="font-size:18px;padding:12px 32px;" data-en="Join Us" data-zh="加入我们">Join Us</a>
+  <button class="nav-lang" style="font-size:14px;padding:8px 20px;" data-en="中文" data-zh="EN">中文</button>
+</div>

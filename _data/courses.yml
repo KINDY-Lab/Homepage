@@ -1,0 +1,42 @@
+- code: "PSY2120"
+  name_en: "Learning and Behavior"
+  name_zh: "学习与行为"
+  level_en: "Undergraduate"
+  level_zh: "本科"
+  evaluation: "5.72/6.0"
+  desc_en: "Core undergraduate course covering behavioral and cognitive learning theories, evidence-based teaching strategies, and applications in educational and clinical settings."
+  desc_zh: "本科核心课程，涵盖行为与认知学习理论、循证教学策略，以及在教育和临床环境中的应用。"
+  tags_en: ["Undergraduate", "Applied Psychology"]
+  tags_zh: ["本科", "应用心理学"]
+  icon_bg: "linear-gradient(135deg, #1E0A3C, #3D1A8A)"
+
+- code: "PSY5120"
+  name_en: "Child and Adolescent Development"
+  name_zh: "儿童与青少年发展"
+  level_en: "Postgraduate"
+  level_zh: "研究生"
+  evaluation: "5.79/6.0"
+  desc_en: "Thematic, systems-oriented approach to developmental science, connecting biological, cognitive, social, and contextual factors in child and adolescent development."
+  desc_zh: "以主题和系统为导向的发展科学课程，整合生物、认知、社会和环境因素，探讨儿童与青少年发展。"
+  tags_en: ["Postgraduate", "Developmental Psychology"]
+  tags_zh: ["研究生", "发展心理学"]
+  badge_en: "Signature Course"
+  badge_zh: "精品课程"
+  icon_bg: "linear-gradient(135deg, #2D1460, #5C2D91)"
+
+- code: "PSY3160"
+  name_en: "Positive Psychology"
+  name_zh: "积极心理学"
+  level_en: "Undergraduate"
+  level_zh: "本科"
+  evaluation: ""
+  desc_en: "Evidence-based introduction to positive psychology — well-being, resilience, flourishing — with applications to education and personal development."
+  desc_zh: "基于实证的积极心理学导论——幸福、韧性、蓬勃发展——并探讨其在教育和个人发展中的应用。"
+  tags_en: ["Undergraduate", "Well-being"]
+  tags_zh: ["本科", "幸福感"]
+  icon_bg: "linear-gradient(135deg, #3D1A8A, #7B4BB8)"
+
+director_en: "Undergraduate Programme Director (Applied Psychology)"
+director_zh: "应用心理学本科项目主任"
+director_desc_en: "Oversees 170+ students across 4 cohorts | Pioneered 8-year integrated Bachelor's-Master's-PhD pathway"
+director_desc_zh: "管理4个年级170余名学生 | 首创八年制本硕博贯通培养方案"
