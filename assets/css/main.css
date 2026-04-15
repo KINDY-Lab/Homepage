@@ -1192,6 +1192,9 @@ section { padding: var(--section-pad); }
   gap: 20px;
   margin-bottom: 40px;
 }
+.team-grid-collab {
+  grid-template-columns: repeat(2, 1fr);
+}
 .team-card {
   background: white;
   border-radius: 14px;
@@ -1832,14 +1835,32 @@ footer {
   .hero-content { padding: 0 24px; }
   .nav-logo-full { height: 42px; }
   .hero-badge { font-size: 11px; padding: 5px 14px; gap: 6px; letter-spacing: 0.04em; }
+  #hero { flex-direction: column; align-items: stretch; justify-content: center; }
   .hero-img-right { display: none; }
   .hero-overlay-fade { display: none; }
-  .hero-stats { padding: 0 20px; flex-wrap: wrap; }
+  .hero-actions { flex-wrap: wrap; }
+  .hero-scroll { display: none; }
+  .hero-stats { position: relative; margin-top: 32px; padding: 0 20px; display: grid; grid-template-columns: 1fr 1fr; }
+  .hero-stat { padding: 16px; text-align: center; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
+  .hero-stat:first-child { padding-left: 16px; }
+  .hero-stat-num { font-size: 24px; }
+  .pillars-grid { grid-template-columns: 1fr; }
+  .pillar { padding: 24px 16px; }
+  .pub-tabs { flex-wrap: wrap; }
+  .pub-item { flex-direction: column; padding: 16px; gap: 12px; }
+  .pub-actions { flex-direction: row; align-items: flex-start; }
+  #research, #teaching, #join { padding: 60px 0; }
+  #impact, #contact { padding: 60px 0; }
+  .contact-inner { gap: 32px; }
+  .contact-form { padding: 20px; }
+  .form-row { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; align-items: center; gap: 12px; }
   .container { padding: 0 20px; }
   .charity-wall { padding: 0 20px; }
   .projects-grid { grid-template-columns: 1fr; }
   .project-card.featured { grid-column: span 1; }
   .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-grid-collab { grid-template-columns: 1fr; }
   .about-cards { grid-template-columns: 1fr; }
   .courses-grid { grid-template-columns: 1fr; }
   .news-layout { grid-template-columns: 1fr; }
