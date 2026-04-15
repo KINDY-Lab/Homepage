@@ -61,7 +61,7 @@ nav {
   top: 0; left: 0; right: 0;
   z-index: 1000;
   padding: 0 60px;
-  height: 80px;
+  height: 88px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -79,7 +79,7 @@ nav.scrolled {
   text-decoration: none;
 }
 .nav-logo-full {
-  height: 52px;
+  height: 64px;
   width: auto;
   object-fit: contain;
   border-radius: 4px;
@@ -1830,7 +1830,7 @@ footer {
   .nav-links { display: none; }
   .nav-hamburger { display: flex; }
   .hero-content { padding: 0 24px; }
-  .nav-logo-full { height: 36px; }
+  .nav-logo-full { height: 42px; }
   .hero-badge { font-size: 11px; padding: 5px 14px; gap: 6px; letter-spacing: 0.04em; }
   .hero-img-right { display: none; }
   .hero-overlay-fade { display: none; }
