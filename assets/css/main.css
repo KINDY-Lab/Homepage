@@ -61,7 +61,7 @@ nav {
   top: 0; left: 0; right: 0;
   z-index: 1000;
   padding: 0 60px;
-  height: 72px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -79,7 +79,7 @@ nav.scrolled {
   text-decoration: none;
 }
 .nav-logo-full {
-  height: 36px;
+  height: 52px;
   width: auto;
   object-fit: contain;
   border-radius: 4px;
@@ -246,8 +246,10 @@ nav.scrolled {
   opacity: 0;
   animation: fadeUp 0.8s 0.2s forwards;
   flex-shrink: 0;
+  white-space: nowrap;
 }
-.hero-badge span { width: 6px; height: 6px; background: var(--gold-500); border-radius: 50%; }
+.hero-badge span:first-child { width: 6px; height: 6px; background: var(--gold-500); border-radius: 50%; flex-shrink: 0; }
+.hero-badge span:last-child { white-space: nowrap; }
 .hero-title {
   font-family: var(--font-display);
   font-size: clamp(44px, 5vw, 72px);
@@ -1828,7 +1830,7 @@ footer {
   .nav-links { display: none; }
   .nav-hamburger { display: flex; }
   .hero-content { padding: 0 24px; }
-  .nav-logo-full { height: 28px; }
+  .nav-logo-full { height: 36px; }
   .hero-badge { font-size: 11px; padding: 5px 14px; gap: 6px; letter-spacing: 0.04em; }
   .hero-img-right { display: none; }
   .hero-overlay-fade { display: none; }
