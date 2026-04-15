@@ -11,18 +11,7 @@ KINDY Lab website for CUHK Shenzhen — a Jekyll static site deployed on GitHub 
 
 ## Build & Development Commands
 
-```bash
-# Install dependencies (requires Ruby + Bundler)
-bundle install
-
-# Local dev server with live reload
-bundle exec jekyll serve
-
-# Build static site to _site/
-bundle exec jekyll build
-```
-
-**No local Ruby/Jekyll environment.** Do not attempt `bundle` or `jekyll` commands. Rely on GitHub Pages CI for build verification — push to `main` branch triggers automatic deployment.
+No local Ruby/Jekyll environment. All builds happen via GitHub Pages CI — push to `main` triggers deployment.
 
 No tests, no linter.
 
@@ -98,12 +87,12 @@ Single IIFE with these features:
 - **Color palette:** CUHK Shenzhen Deep Purple (`#1E0A3C` to `#7B4BB8`) + Gold (`#D4A843`)
 - **Typography:** Cormorant Garamond (display/serif) + DM Sans (body/sans-serif)
 - All colors defined as CSS variables in `:root` — reference these, never hardcode hex values
-- **Icons:** Pillar and award icons use inline SVG with `#D4A843` stroke color (not emoji)
+- **Icons:** Pillar, award, About card, Join card, and course icons use inline SVG with `#D4A843` stroke color (not emoji)
 - **Responsive breakpoints:** `1024px` (tablet) and `768px` (mobile, hamburger menu)
 - **Animation keyframes:**
   - `fadeUp` — hero content entrance animation
   - `charityScrollLeft` / `charityScrollRight` — dual-row infinite photo wall
-  - `marqueeScroll` — partner logo and journal name scrolling
+  - `marqueeScroll` / `marqueeScrollReverse` — partner logos (R→L) and journal names (L→R) bidirectional scrolling
 
 ### Infinite Scroll Pattern
 Used for charity photo wall and partner logos. Requires **duplicating** the image/element set in HTML so the CSS `translateX(-50%)` animation loops seamlessly. Structure:
@@ -117,11 +106,21 @@ Used for charity photo wall and partner logos. Requires **duplicating** the imag
 ```
 
 ### Images (`assets/images/`)
-Organized by section: `logo/`, `team/`, `events/`, `charity/`, `lab/`, `childmind-ai/`. Original source files live in `Assets/` (not tracked via Jekyll build). All images use `loading="lazy"` except hero.
+Organized by section: `logo/`, `team/`, `events/`, `charity/`, `lab/`, `childmind-ai/`, `courses/`. Original source files live in `Assets/` (not tracked via Jekyll build). All images use `loading="lazy"` except hero.
+
+### CDN Integration (Tencent Cloud COS)
+- `site.cdn` in `_config.yml` points to COS bucket domain: `https://kindylab-1421635372.cos.ap-guangzhou.myqcloud.com`
+- Preload links in `default.html` use CDN paths directly
+- Runtime JS in `default.html` rewrites all `<img>` src from `/Homepage/assets/images/...` to CDN URL
+- Non-image assets (CSS, JS) still served from GitHub Pages
+- GitHub Actions workflow (`.github/workflows/deploy.yml`) syncs `assets/images/` to COS on every push to `main`
+- COS credentials stored in GitHub repo Secrets: `COS_SECRET_ID`, `COS_SECRET_KEY`, `COS_BUCKET`
+- `TencentCloud/cos-action@v1` parameter names: `cos_bucket` / `cos_region` (not `bucket` / `region`)
 
 ## Key Constraints
 
-- **China network compatibility:** No Google Analytics, no YouTube embeds, no Cloudflare JS. Note: `default.html` currently loads Google Fonts CDN — should be replaced with self-hosted WOFF2 files for production China access.
+- **China network compatibility:** No Google Analytics, no YouTube embeds, no Cloudflare JS. Images served via jsDelivr CDN. Note: `default.html` currently loads Google Fonts CDN — should be replaced with self-hosted WOFF2 files for production China access.
+- **No local Ruby/Jekyll environment.** Do not attempt `bundle` or `jekyll` commands. Rely on GitHub Pages CI for build verification — push to `main` branch triggers automatic deployment.
 - **No frameworks:** Vanilla HTML/CSS/JS + Jekyll only. No React, Vue, or SPAs.
 - **GitHub Pages compatible plugins only:** `jekyll-seo-tag`, `jekyll-sitemap`
 - **Contact form:** Uses Formspree (no backend needed)
