@@ -55,9 +55,10 @@
 
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
 
-  <!-- Preload critical above-the-fold images -->
-  <link rel="preload" as="image" href="{{ 'assets/images/lab/lab-teachers-day-flowers.jpg' | relative_url }}" />
-  <link rel="preload" as="image" href="{{ 'assets/images/lab/event-young-research-award.jpg' | relative_url }}" />
+  <!-- Preload critical above-the-fold images (CDN) -->
+  <link rel="preload" as="image" href="{{ site.cdn }}/assets/images/lab/lab-teachers-day-flowers.jpg" />
+  <link rel="preload" as="image" href="{{ site.cdn }}/assets/images/lab/event-young-research-award.jpg" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 
   {% seo %}
 </head>
@@ -69,5 +70,19 @@
   {% include footer.html %}
 
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  <script>
+  (function() {
+    var cdn = '{{ site.cdn }}';
+    var prefix = '{{ site.baseurl }}';
+    document.querySelectorAll('img').forEach(function(img) {
+      var src = img.getAttribute('src') || '';
+      if (src.indexOf(prefix + '/assets/images/') === 0) {
+        img.src = cdn + src.replace(prefix, '');
+      } else if (src.indexOf('/assets/images/') === 0) {
+        img.src = cdn + src;
+      }
+    });
+  })();
+  </script>
 </body>
 </html>
