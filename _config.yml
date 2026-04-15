@@ -6,7 +6,7 @@ description: >-
   child development, and AI-powered assessment. PI: Dr. Runke Huang (黄润珂).
 baseurl: "/Homepage"
 url: "https://kindy-lab.github.io"
-cdn: "https://cdn.jsdelivr.net/gh/KINDY-Lab/Homepage@main"
+cdn: "https://kindylab-1421635372.cos.ap-guangzhou.myqcloud.com"
 
 plugins:
   - jekyll-seo-tag
