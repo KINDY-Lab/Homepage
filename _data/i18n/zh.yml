@@ -107,7 +107,7 @@ team:
   ma_label: "硕士生"
   collab_label: "合作者"
   recruiting: "正在招募！"
-  recruiting_role: "2025级博士 · 开放申请"
+  recruiting_role: "2026级博士 · 开放申请"
   recruiting_tag: "立即申请"
 
 news:
@@ -136,7 +136,7 @@ join:
   desc: "我们正在招募各个层级的优秀学者——那些真正关心儿童未来、追求严谨研究的人才。你将加入一个位于深圳的高影响力、国际化的研究团队。"
   positions:
     phd_title: "博士生"
-    phd_desc: "2025/2026届博士生招募中，欢迎心理学、教育学、统计学、AI相关背景的同学申请，要求具备较强定量研究能力及对幼儿教育的真诚热情。"
+    phd_desc: "2026/2027届博士生招募中，欢迎心理学、教育学、统计学、AI相关背景的同学申请，要求具备较强定量研究能力及对幼儿教育的真诚热情。"
     postdoc_title: "博士后研究员"
     postdoc_desc: "欢迎在发展心理学、幼教质量评估、定量方法或教育AI领域有专长的研究者申请。提供有竞争力的薪资与发表支持。"
     ra_title: "研究助理与实习生"
@@ -169,4 +169,4 @@ footer:
   connect: "联系"
   scholar: "Google Scholar"
   faculty: "教师主页"
-  copyright: "© 2025 KINDY Lab · 香港中文大学（深圳）"
+  copyright: "© 2026 KINDY Lab · 香港中文大学（深圳）"
