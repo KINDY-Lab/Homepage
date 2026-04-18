@@ -44,20 +44,17 @@ jobs:
           mv coscli-linux-amd64 coscli
           chmod +x coscli
 
-          # Write config
-          cat > ~/.cos.yaml <<EOF
-          cos:
-            base:
-              secretid: ${{ secrets.COS_SECRET_ID }}
-              secretkey: ${{ secrets.COS_SECRET_KEY }}
-              sessiontoken: ""
-            buckets:
-            - name: ${{ secrets.COS_BUCKET }}
-              region: ap-guangzhou
-          EOF
+          # Debug: verify secrets are injected (show first 4 chars only)
+          echo "COS_SECRET_ID starts with: $(echo "${{ secrets.COS_SECRET_ID }}" | cut -c1-4)..."
+          echo "COS_BUCKET is: ${{ secrets.COS_BUCKET }}"
 
-          # Incremental sync — only uploads new or changed files
-          ./coscli sync assets/images/ "cos://${{ secrets.COS_BUCKET }}/assets/images/" --recursive
+          # Incremental sync — pass credentials via flags to skip config file
+          ./coscli sync assets/images/ "cos://${{ secrets.COS_BUCKET }}/assets/images/" \
+            --recursive \
+            -i "${{ secrets.COS_SECRET_ID }}" \
+            -k "${{ secrets.COS_SECRET_KEY }}" \
+            -e "cos.ap-guangzhou.myqcloud.com" \
+            --init-skip=true
 
   deploy:
     environment:
