@@ -57,7 +57,7 @@ jobs:
           EOF
 
           # Incremental sync — only uploads new or changed files
-          ./coscli sync assets/images/ "cos://${{ secrets.COS_BUCKET }}/assets/images/"
+          ./coscli sync assets/images/ "cos://${{ secrets.COS_BUCKET }}/assets/images/" --recursive
 
   deploy:
     environment:
