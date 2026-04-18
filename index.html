@@ -291,7 +291,7 @@ title: KINDY Lab — CUHK Shenzhen
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M10 4H22V16C22 19.3 19.3 22 16 22C12.7 22 10 19.3 10 16V4Z" stroke="#D4A843" stroke-width="1.8"/><path d="M10 4H6V8C6 10.2 7.8 12 10 12" stroke="#D4A843" stroke-width="1.5"/><path d="M22 4H26V8C26 10.2 24.2 12 22 12" stroke="#D4A843" stroke-width="1.5"/><path d="M16 22V28" stroke="#D4A843" stroke-width="1.8"/><path d="M11 28H21" stroke="#D4A843" stroke-width="1.8" stroke-linecap="round"/><circle cx="16" cy="13" r="3" stroke="#D4A843" stroke-width="1.3" fill="none"/></svg>
           {% elsif award.id == 'nsfc-panel' %}
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="11" stroke="#D4A843" stroke-width="1.8"/><circle cx="16" cy="16" r="5" stroke="#D4A843" stroke-width="1.5"/><line x1="16" y1="5" x2="16" y2="27" stroke="#D4A843" stroke-width="0.8" opacity="0.4"/><line x1="5" y1="16" x2="27" y2="16" stroke="#D4A843" stroke-width="0.8" opacity="0.4"/><line x1="8.2" y1="8.2" x2="23.8" y2="23.8" stroke="#D4A843" stroke-width="0.6" opacity="0.3"/><line x1="23.8" y1="8.2" x2="8.2" y2="23.8" stroke="#D4A843" stroke-width="0.6" opacity="0.3"/></svg>
-          {% elsif award.id == 'ceie-expo' %}
+          {% elsif award.id == 'cite-expo' %}
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="8" width="24" height="18" rx="2" stroke="#D4A843" stroke-width="1.8"/><path d="M4 14H28" stroke="#D4A843" stroke-width="1.3"/><path d="M10 8V4" stroke="#D4A843" stroke-width="1.3" stroke-linecap="round"/><path d="M22 8V4" stroke="#D4A843" stroke-width="1.3" stroke-linecap="round"/><rect x="8" y="18" width="6" height="4" rx="1" stroke="#D4A843" stroke-width="1.2"/><rect x="18" y="18" width="6" height="4" rx="1" stroke="#D4A843" stroke-width="1.2"/></svg>
           {% elsif award.id == 'policy-report' %}
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M8 4H24V28L20 25L16 28L12 25L8 28V4Z" stroke="#D4A843" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 11H20" stroke="#D4A843" stroke-width="1.3" stroke-linecap="round"/><path d="M12 15H18" stroke="#D4A843" stroke-width="1.3" stroke-linecap="round"/><path d="M12 19H16" stroke="#D4A843" stroke-width="1.3" stroke-linecap="round"/></svg>
@@ -521,7 +521,8 @@ title: KINDY Lab — CUHK Shenzhen
         </div>
       </div>
       <div class="news-list reveal">
-        {% for item in site.data.news limit: 8 %}
+        {% assign sorted_news = site.data.news | sort: "date" | reverse %}
+        {% for item in sorted_news limit: 8 %}
         {% unless item.featured %}
         <a href="#" class="news-item">
           <div class="news-item-dot"></div>

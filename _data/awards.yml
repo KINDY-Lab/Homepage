@@ -15,13 +15,13 @@ items:
     desc_zh: "受邀担任国家自然科学基金面上项目通讯评审专家——在此职业阶段实属罕见。"
     badges: ["NSFC"]
 
-  - id: ceie-expo
+  - id: cite-expo
     icon: "🏛"
-    title_en: "14th China Electronic Information Expo"
-    title_zh: "第十四届中国电子信息博览会"
-    desc_en: "ChildMind AI Education selected for the 14th China Electronic Information Expo (中国电子信息博览会)."
-    desc_zh: "童心智教入选第十四届中国电子信息博览会展示。"
-    badges: ["CEIE 2024"]
+    title_en: "14th China Information Technology Expo (CITE 2026)"
+    title_zh: "第十四届中国电子信息博览会（CITE 2026）"
+    desc_en: "ChildMind AI was selected as an outstanding case for the 14th China Information Technology Expo (CITE 2026) in Shenzhen."
+    desc_zh: "童心智教入选第十四届中国电子信息博览会（CITE 2026）"
+    badges: ["CITE 2026"]
 
   - id: policy-report
     icon: "📋"

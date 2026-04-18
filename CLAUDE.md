@@ -20,7 +20,7 @@ No tests, no linter.
 **Jekyll site** with a single-page homepage (`index.html`) plus three sub-pages (`publications.html`, `team.html`, `projects/childmind-ai.html`).
 
 ### Layouts (`_layouts/`)
-- `default.html` — base HTML shell: meta tags, font loading (self-hosted + Google Fonts CDN fallback), navbar, footer, JS
+- `default.html` — base HTML shell: meta tags, font loading (`local()` @font-face + Google Fonts CDN fallback), navbar, footer, JS
 - `page.html` — extends default; for sub-pages (publications, team)
 - `project.html` — extends default; for project detail pages (childmind-ai)
 
@@ -35,7 +35,9 @@ All content is managed through YAML files — non-developers can update the site
 
 | File | Structure | Purpose |
 |---|---|---|
-| `publications.yml` | plain sequence | Research papers (title, authors, venue, year, badges, DOI) |
+| `publications.yml` | plain sequence | Research papers (title, authors, venue, year, badges, DOI, PDF) |
+
+**DOI/PDF link pattern:** `publications.yml` stores bare DOI identifiers (e.g., `10.1037/edu0000851`). The template `_includes/pub-card.html` prepends `https://doi.org/` to form the link. PDF fields are full URLs. Both use `{% if pub.field %}` to hide buttons when empty.
 | `team.yml` | mapping | PI bio/education, PhD/MA students, collaborators |
 | `news.yml` | plain sequence | News items with dates, categories, featured flag |
 | `projects.yml` | plain sequence | Project cards with image paths, descriptions, tags |
@@ -116,10 +118,11 @@ Organized by section: `logo/`, `team/`, `events/`, `charity/`, `lab/`, `childmin
 - GitHub Actions workflow (`.github/workflows/deploy.yml`) syncs `assets/images/` to COS on every push to `main`
 - COS credentials stored in GitHub repo Secrets: `COS_SECRET_ID`, `COS_SECRET_KEY`, `COS_BUCKET`
 - `TencentCloud/cos-action@v1` parameter names: `cos_bucket` / `cos_region` (not `bucket` / `region`)
+- **Videos** are hosted directly on COS (not synced by Actions) — use full COS URL in `<video src>` and ensure file has public-read ACL
 
 ## Key Constraints
 
-- **China network compatibility:** No Google Analytics, no YouTube embeds, no Cloudflare JS. Images served via jsDelivr CDN. Note: `default.html` currently loads Google Fonts CDN — should be replaced with self-hosted WOFF2 files for production China access.
+- **China network compatibility:** No Google Analytics, no YouTube embeds, no Cloudflare JS. Images served via Tencent Cloud COS. Note: `default.html` currently loads Google Fonts CDN — should be replaced with self-hosted WOFF2 files for production China access.
 - **No local Ruby/Jekyll environment.** Do not attempt `bundle` or `jekyll` commands. Rely on GitHub Pages CI for build verification — push to `main` branch triggers automatic deployment.
 - **No frameworks:** Vanilla HTML/CSS/JS + Jekyll only. No React, Vue, or SPAs.
 - **GitHub Pages compatible plugins only:** `jekyll-seo-tag`, `jekyll-sitemap`
