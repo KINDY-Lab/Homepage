@@ -82,6 +82,14 @@
         img.src = cdn + src;
       }
     });
+    document.querySelectorAll('video[poster]').forEach(function(video) {
+      var poster = video.getAttribute('poster') || '';
+      if (poster.indexOf(prefix + '/assets/images/') === 0) {
+        video.poster = cdn + poster.replace(prefix, '');
+      } else if (poster.indexOf('/assets/images/') === 0) {
+        video.poster = cdn + poster;
+      }
+    });
   })();
   </script>
 </body>
