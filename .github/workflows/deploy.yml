@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -40,7 +42,12 @@ jobs:
       - name: Detect changed images
         id: changes
         run: |
-          CHANGED=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'assets/images/')
+          if git rev-parse HEAD~1 >/dev/null 2>&1; then
+            CHANGED=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'assets/images/')
+          else
+            CHANGED=$(find assets/images -type f)
+            echo "### First commit — full sync fallback ###"
+          fi
           if [ -z "$CHANGED" ]; then
             echo "has_changes=false" >> $GITHUB_OUTPUT
             echo "No image changes detected, skipping COS sync."
