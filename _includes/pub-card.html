@@ -23,8 +23,8 @@
     </div>
   </div>
   <div class="pub-actions">
-    {% if pub.pdf %}<a href="{{ pub.pdf }}" class="pub-btn pdf" target="_blank">PDF</a>{% endif %}
-    {% if pub.doi %}<a href="{{ pub.doi }}" class="pub-btn" target="_blank">DOI</a>{% endif %}
+    {% if pub.pdf %}<a href="{{ pub.pdf }}" class="pub-btn pdf" target="_blank" rel="noopener">PDF</a>{% endif %}
+    {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" class="pub-btn" target="_blank" rel="noopener">DOI</a>{% endif %}
     <a href="#" class="pub-btn">BIB</a>
   </div>
 </div>

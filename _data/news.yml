@@ -1,12 +1,12 @@
-- date: "2025-04"
+- date: "2024-08"
   category: "grant"
-  title_en: "Received NSFC Youth Program Grant (国家自然科学基金青年项目)"
+  title_en: "Received NSFC Youth Program Grant"
   title_zh: "获得国家自然科学基金青年项目资助"
-  desc_en: ""
-  desc_zh: ""
+  desc_en: "Investigating the Use of Generative Pre-trained Models for Enhanced Assessment of Instructional Interaction in Kindergartens (2024–2027)"
+  desc_zh: "基于生成式预训练模型的幼儿园教学互动评估研究（2024–2027）"
   badge: "Grant"
 
-- date: "2025-03"
+- date: "2025-09"
   category: "award"
   title_en: "Awarded 2025 Young Researcher Award — sole HSS recipient"
   title_zh: "荣获2025年青年科研奖 — 全院唯一获奖者"
@@ -14,7 +14,7 @@
   desc_zh: "2025年人文社科学院青年科研奖，全院唯一获奖者。"
   badge: "Award"
   featured: true
-  image: "assets/images/events/event-presentation-junlin.jpg"
+  image: "assets/images/lab/event-young-research-award.jpg"
 
 - date: "2025-02"
   category: "project"
@@ -30,16 +30,21 @@
   title_zh: "论文发表于 Journal of Educational Psychology（RCT结果）"
   badge: "Paper"
 
-- date: "2024-11"
+- date: "2026-04"
   category: "event"
-  title_en: "ChildMind AI selected for 14th China Electronic Information Expo"
+  title_en: "ChildMind AI selected for 14th China Information Technology Expo"
   title_zh: "童心智教入选第十四届中国电子信息博览会"
   badge: "Award"
+  featured: true
+  desc_en: "ChildMind AI was selected as an outstanding case for the 14th China Information Technology Expo (CITE 2026) in Shenzhen."
+  image: "assets/images/events/event-conf-CITE-2026.png"
 
-- date: "2024-10"
+- date: "2026-03"
   category: "event"
-  title_en: "Policy consultation report delivered to Nanshan District Government"
-  title_zh: "向南山区政府提交政策咨询报告"
+  title_en: "ChildMind AI selected for Nanshan District Government internal reference"
+  title_zh: "童心智教入选南山区政府内参，向区委区政府汇报"
+  desc_en: "ChildMind AI's work was selected for the Nanshan District Government internal reference and presented to the District Party Committee and Government."
+  desc_zh: "童心智教相关工作入选深圳市南山区政府内参，向区委区政府进行汇报。"
   badge: "Policy"
 
 - date: "2024-09"

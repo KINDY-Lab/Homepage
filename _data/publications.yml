@@ -9,8 +9,8 @@
   year_pub: 2024
   category: [rct, intervention]
   badges: [Q1, RCT]
-  doi: ""
-  pdf: ""
+  doi: "10.1037/edu0000851"
+  pdf: "https://doi.org/10.1037/edu0000851"
   featured: true
 
 - id: cheng2024play
@@ -24,8 +24,8 @@
   year_pub: 2024
   category: [childdev, play]
   badges: [Q1]
-  doi: ""
-  pdf: ""
+  doi: "10.1007/s10643-024-01673-1"
+  pdf: "https://link.springer.com/article/10.1007/s10643-024-01673-1"
 
 - id: fang2024bjep
   year: 2024
@@ -52,8 +52,8 @@
   year_pub: 2023
   category: [childdev, quality]
   badges: [Q1, "IF 5.66"]
-  doi: ""
-  pdf: ""
+  doi: "10.1111/cdev.13916"
+  pdf: "https://srcd.onlinelibrary.wiley.com/doi/10.1111/cdev.13916"
   featured: true
 
 - id: huang2023selfreg
@@ -67,8 +67,8 @@
   year_pub: 2023
   category: [childdev, selfregulation]
   badges: [Q2, "IF 2.1"]
-  doi: ""
-  pdf: ""
+  doi: "10.1080/10409289.2022.2056695"
+  pdf: "https://www.tandfonline.com/doi/full/10.1080/10409289.2022.2056695"
 
 - id: siraj2020bronfenbrenner
   year: 2020
@@ -81,8 +81,8 @@
   year_pub: 2020
   category: [theory, review]
   badges: [Q1, "IF 5.71"]
-  doi: ""
-  pdf: ""
+  doi: "10.1159/000508341"
+  pdf: "https://karger.com/hde/article-abstract/64/1/21/158266"
 
 - id: yang2021training
   year: 2021
@@ -95,8 +95,8 @@
   year_pub: 2021
   category: [teacher, technology]
   badges: [Q1, "IF 3.76"]
-  doi: ""
-  pdf: ""
+  doi: "10.1111/jcal.12558"
+  pdf: "https://onlinelibrary.wiley.com/doi/full/10.1111/jcal.12558"
 
 - id: huang2019pedagogy
   year: 2019
@@ -109,8 +109,8 @@
   year_pub: 2019
   category: [quality, teacher]
   badges: [Q1, "IF 3.78"]
-  doi: ""
-  pdf: ""
+  doi: "10.1016/j.tate.2019.06.009"
+  pdf: "https://www.sciencedirect.com/science/article/abs/pii/S0742051X18318821"
 
 - id: li2016preschool
   year: 2016
