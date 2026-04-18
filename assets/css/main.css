@@ -310,6 +310,8 @@ nav.scrolled {
   font-family: var(--font-body);
 }
 .btn-secondary:hover { border-color: rgba(255,255,255,0.5); background: rgba(255,255,255,0.06); }
+.btn-website { padding:14px 32px; background:var(--purple-600); color:white; border:none; border-radius:8px; font-weight:600; font-size:15px; text-decoration:none; transition:background 0.2s, transform 0.2s; display:inline-flex; align-items:center; gap:8px; cursor:pointer; font-family:var(--font-body); }
+.btn-website:hover { background:var(--purple-500); transform:translateY(-2px); }
 .hero-scroll {
   position: absolute;
   bottom: 40px; left: 60px;

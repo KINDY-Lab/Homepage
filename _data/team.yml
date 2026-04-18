@@ -39,14 +39,14 @@ phd_students:
   - name_en: "Junlin Wu"
     name_zh: "吴俊霖"
     year: 3
-    research_en: "Early Childhood Assessment, Classroom Quality"
-    research_zh: "幼儿教育评估，课堂质量"
+    research_en: "Preschool Process Quality Assessment; Children's Learning & Social-Emotional Development; Family Environment & Engagement"
+    research_zh: "学前过程性质量评估、儿童学习与社会情感发展、家庭环境与参与"
     photo: "assets/images/team/phd-Junlin Wu.jpg"
   - name_en: "Yanan Bao"
     name_zh: "包雅楠"
     year: 2
-    research_en: "Child Development, Self-Regulation"
-    research_zh: "儿童发展，自我调节"
+    research_en: "Teacher-Child Interaction; Preschool Quality Assessment; Natural Language Processing"
+    research_zh: "师幼互动、学前质量评估、自然语言处理"
     photo: "assets/images/team/phd-Yanan bao.jpg"
   - name_en: "Yuye Jin"
     name_zh: "金煜烨"
@@ -57,15 +57,15 @@ phd_students:
   - name_en: "Jingwen Li"
     name_zh: "李静雯"
     year: 1
-    research_en: "Play-Based Learning, Deeper Learning"
-    research_zh: "游戏化学习，深度学习"
+    research_en: "Early Childhood Cognitive Neuroscience; Music Neuroaesthetics in Early Childhood; Neural Mechanisms of Teacher-Child Interaction"
+    research_zh: "早期儿童认知神经科学、早期儿童音乐神经美学、师幼互动神经机制"
     photo: "assets/images/team/phd-JingwenLi.jpg"
 
 ma_students:
   - name_en: "Baoyi Lu"
     name_zh: "陆宝怡"
-    research_en: "Early Childhood Education"
-    research_zh: "幼儿教育"
+    research_en: "Teacher-Child Interaction; Preschool Quality; Child Development Assessment"
+    research_zh: "师幼互动、学前质量、儿童发展评估"
     photo: "assets/images/team/ma-Baoyi Lu.jpg"
   - name_en: "Student Name"
     name_zh: "学生姓名"
