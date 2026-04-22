@@ -85,7 +85,7 @@
   }
 
   // ===== SCROLL REVEAL =====
-  var reveals = document.querySelectorAll('.reveal');
+  var reveals = document.querySelectorAll('.reveal, .reveal-img');
   if (reveals.length > 0 && 'IntersectionObserver' in window) {
     var revealObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
@@ -110,7 +110,7 @@
     function step(timestamp) {
       if (!startTime) startTime = timestamp;
       var progress = Math.min((timestamp - startTime) / duration, 1);
-      var eased = 1 - Math.pow(1 - progress, 3);
+      var eased = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
       var current = Math.floor(eased * target);
 
       var prefix = el.getAttribute('data-prefix') || '';

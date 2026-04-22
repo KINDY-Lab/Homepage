@@ -57,7 +57,7 @@ title: KINDY Lab — CUHK Shenzhen
   <div class="container">
     <div class="about-grid">
       <div class="about-image reveal">
-        <div class="about-img-main">
+        <div class="about-img-main reveal-img">
           <img src="{{ 'assets/images/lab/event-young-research-award.jpg' | relative_url }}" alt="KINDY Lab team" loading="lazy" />
         </div>
         <div class="about-img-badge">
@@ -175,7 +175,7 @@ title: KINDY Lab — CUHK Shenzhen
     <div class="projects-grid">
       {% for project in site.data.projects %}
       <a href="{% if project.id == 'childmind-ai' %}{{ '/projects/childmind-ai' | relative_url }}{% else %}#{% endif %}" class="project-card{% if project.featured %} featured{% endif %} reveal">
-        <div class="project-img">
+        <div class="project-img reveal-img">
           <img src="{{ project.image | relative_url }}" alt="{{ project.title_en }}" loading="lazy" />
           <div class="play-overlay"></div>
         </div>
@@ -496,7 +496,7 @@ title: KINDY Lab — CUHK Shenzhen
     <div class="news-layout">
       {% assign featured_news = site.data.news | where: "featured", true | first %}
       <div class="news-featured reveal">
-        <div class="news-carousel">
+        <div class="news-carousel reveal-img">
           <div class="news-carousel-track">
             <img src="{{ 'assets/images/events/event-presentation-junlin.jpg' | relative_url }}" alt="Lab event" loading="lazy" />
             <img src="{{ 'assets/images/events/event-conf-hk-eduhk-lihui-team.jpg' | relative_url }}" alt="Conference" loading="lazy" />
