@@ -820,7 +820,7 @@ section { padding: var(--section-pad); }
   transition: border-color 0.2s, box-shadow 0.2s;
   background: white;
 }
-.pub-item:hover { border-color: rgba(92,45,145,0.2); box-shadow: var(--shadow-md); border-left: 3px solid var(--gold-500); padding-left: 29px; }
+.pub-item:hover { border-color: rgba(92,45,145,0.2); box-shadow: var(--shadow-md); border-left: 3px solid var(--gold-500); }
 .pub-year {
   font-family: var(--font-display);
   font-size: 22px;
