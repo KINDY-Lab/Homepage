@@ -1,3 +1,15 @@
+- date: "2026-05"
+  category: "paper"
+  title_en: "Paper accepted at IJCAI 2026 — MLLMs Get It Right, Then Get It Wrong: Tracing and Correcting Late-Layer Textual Bias"
+  title_zh: "论文被 IJCAI 2026 接收 — MLLMs Get It Right, Then Get It Wrong: Tracing and Correcting Late-Layer Textual Bias"
+  badge: "Paper"
+
+- date: "2026-05"
+  category: "paper"
+  title_en: "Paper accepted at ICML 2026 — Advantage Collapse in Group Relative Policy Optimization: Diagnosis and Mitigation"
+  title_zh: "论文被 ICML 2026 接收 — Advantage Collapse in Group Relative Policy Optimization: Diagnosis and Mitigation"
+  badge: "Paper"
+
 - date: "2024-08"
   category: "grant"
   title_en: "Received NSFC Youth Program Grant"

@@ -1,3 +1,31 @@
+- id: li2026mllms
+  year: 2026
+  title_en: "MLLMs Get It Right, Then Get It Wrong: Tracing and Correcting Late-Layer Textual Bias"
+  title_zh: "MLLMs Get It Right, Then Get It Wrong: Tracing and Correcting Late-Layer Textual Bias"
+  authors: "Li, X., Cheng, A., Sun, Q., He, X., Ji, X., Huang, R.*, & Hu, Q."
+  author_highlight: "Huang, R."
+  venue: "35th International Joint Conference on Artificial Intelligence - 29th European Conference on Artificial Intelligence (IJCAI)"
+  venue_short: "IJCAI 2026"
+  year_pub: 2026
+  category: [ai, ml]
+  badges: ["Accepted"]
+  doi: ""
+  pdf: ""
+
+- id: he2026advantage
+  year: 2026
+  title_en: "Advantage Collapse in Group Relative Policy Optimization: Diagnosis and Mitigation"
+  title_zh: "Advantage Collapse in Group Relative Policy Optimization: Diagnosis and Mitigation"
+  authors: "He, X., Sun, Q., Cheng, A., Li, X., Ji, X., Lu, H., Huang, R.*, & Hu, Q."
+  author_highlight: "Huang, R."
+  venue: "Forty-third International Conference on Machine Learning (ICML 2026)"
+  venue_short: "ICML 2026"
+  year_pub: 2026
+  category: [ai, ml]
+  badges: ["Accepted"]
+  doi: ""
+  pdf: ""
+
 - id: huang2024rct
   year: 2024
   title_en: "Promoting effective teaching and learning through a professional development program: A randomized controlled trial"
