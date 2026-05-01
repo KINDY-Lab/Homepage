@@ -179,6 +179,9 @@
         } else if (filterText === 'Child Development' || filterText === '儿童发展') {
           var cats2 = item.getAttribute('data-category') || '';
           item.style.display = (cats2.includes('childdev') || cats2.includes('selfregulation')) ? '' : 'none';
+        } else if (filterText === 'AI & Education' || filterText === 'AI与教育') {
+          var cats3 = item.getAttribute('data-category') || '';
+          item.style.display = cats3.includes('ai-education') ? '' : 'none';
         } else {
           item.style.display = '';
         }

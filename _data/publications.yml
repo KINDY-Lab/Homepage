@@ -7,8 +7,8 @@
   venue: "35th International Joint Conference on Artificial Intelligence - 29th European Conference on Artificial Intelligence (IJCAI)"
   venue_short: "IJCAI 2026"
   year_pub: 2026
-  category: [ai, ml]
-  badges: ["Accepted"]
+  category: [ai, ml, ai-education]
+  badges: ["CCF A"]
   doi: ""
   pdf: ""
 
@@ -21,8 +21,8 @@
   venue: "Forty-third International Conference on Machine Learning (ICML 2026)"
   venue_short: "ICML 2026"
   year_pub: 2026
-  category: [ai, ml]
-  badges: ["Accepted"]
+  category: [ai, ml, ai-education]
+  badges: ["CCF A"]
   doi: ""
   pdf: ""
 

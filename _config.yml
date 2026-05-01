@@ -19,6 +19,7 @@ exclude:
   - vendor
   - README.md
   - CLAUDE.md
+  - PROJECT_CONTEXT.md
 
 sass:
   style: compressed
