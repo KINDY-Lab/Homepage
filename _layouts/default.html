@@ -74,12 +74,32 @@
   (function() {
     var cdn = '{{ site.cdn }}';
     var prefix = '{{ site.baseurl }}';
+    function localAssetPath(src) {
+      if (src.indexOf(prefix + '/assets/images/') === 0) {
+        return src;
+      }
+      if (src.indexOf('/assets/images/') === 0) {
+        return prefix + src;
+      }
+      return '';
+    }
+    function cdnAssetPath(localSrc) {
+      return cdn + localSrc.replace(prefix, '');
+    }
     document.querySelectorAll('img').forEach(function(img) {
       var src = img.getAttribute('src') || '';
-      if (src.indexOf(prefix + '/assets/images/') === 0) {
-        img.src = cdn + src.replace(prefix, '');
-      } else if (src.indexOf('/assets/images/') === 0) {
-        img.src = cdn + src;
+      var localSrc = localAssetPath(src);
+      if (localSrc) {
+        if (localSrc.indexOf('/assets/images/team/RA_Photo/') !== -1) {
+          return;
+        }
+        img.addEventListener('error', function fallbackToLocal() {
+          if (img.getAttribute('src') !== localSrc) {
+            img.removeEventListener('error', fallbackToLocal);
+            img.src = localSrc;
+          }
+        });
+        img.src = cdnAssetPath(localSrc);
       }
     });
     document.querySelectorAll('video[poster]').forEach(function(video) {
