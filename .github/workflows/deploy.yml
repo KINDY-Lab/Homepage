@@ -42,10 +42,11 @@ jobs:
       - name: Detect changed images
         id: changes
         run: |
+          mkdir -p assets/images
           if git rev-parse HEAD~1 >/dev/null 2>&1; then
             CHANGED=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'assets/images/')
           else
-            CHANGED=$(find assets/images -type f)
+            CHANGED=$(find assets/images -type f 2>/dev/null || true)
             echo "### First commit — full sync fallback ###"
           fi
           if [ -z "$CHANGED" ]; then
@@ -56,7 +57,7 @@ jobs:
             COUNT=$(echo "$CHANGED" | wc -l)
             echo "### $COUNT image(s) changed ###"
             echo "$CHANGED"
-            mkdir -p /tmp/cos-sync
+            mkdir -p /tmp/cos-sync/assets/images
             echo "$CHANGED" | while read -r file; do
               if [ -f "$file" ]; then
                 mkdir -p "/tmp/cos-sync/$(dirname "$file")"
